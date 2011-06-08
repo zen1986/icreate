@@ -39,8 +39,8 @@ import android.view.View;
 import java.util.Observable;
 import java.util.Observer;
 
-import com.npf.util.OverlayMarker;
-import com.npf.util.OverlayPath;
+import com.npf.data.MapNode;
+import com.npf.main.OutputManager;
 
 /**
  * View capable of drawing an image at different zoom state levels
@@ -60,12 +60,12 @@ public class ImageZoomView extends View implements Observer {
     private final AspectQuotient mAspectQuotient = new AspectQuotient();
 
     /** The bitmap that we're zooming in, and drawing on the screen. */
-    private Bitmap mBitmap;
+    private Bitmap bmMap;
 
     /** State of the zoom. */
     private ZoomState mState;
     
-    private MapManager mm;
+    private OutputManager mm;
     // Public methods
 
     /**
@@ -76,10 +76,10 @@ public class ImageZoomView extends View implements Observer {
     
     public ImageZoomView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        mm = MapManager.getInstance();
-        mBitmap = mm.getBitmap();
-        int w=mBitmap.getWidth();
-        int h=mBitmap.getHeight();
+        mm = OutputManager.getInstance(null);
+        bmMap = mm.getBitmap();
+        int w=bmMap.getWidth();
+        int h=bmMap.getHeight();
         mAspectQuotient.updateAspectQuotient(getWidth(), getHeight(), w, h);
         mAspectQuotient.notifyObservers();
         invalidate();
@@ -93,7 +93,7 @@ public class ImageZoomView extends View implements Observer {
      * @param bitmap The bitmap to view and zoom into
      */
     public void setImage(Bitmap bitmap) {
-        mBitmap = bitmap;
+        bmMap = bitmap;
 
         
     }
@@ -129,14 +129,14 @@ public class ImageZoomView extends View implements Observer {
 
     @Override
     protected void onDraw(Canvas canvas) {
-    	mBitmap = mm.getBitmap();
-        if (mBitmap != null && mState != null) {
+    	bmMap = mm.getBitmap();
+        if (bmMap != null && mState != null) {
             final float aspectQuotient = mAspectQuotient.get();
 
             final int viewWidth = getWidth();
             final int viewHeight = getHeight();
-            final int bitmapWidth = mBitmap.getWidth();
-            final int bitmapHeight = mBitmap.getHeight();
+            final int bitmapWidth = bmMap.getWidth();
+            final int bitmapHeight = bmMap.getHeight();
 
             final float panX = mState.getPanX();
             final float panY = mState.getPanY();
@@ -171,7 +171,7 @@ public class ImageZoomView extends View implements Observer {
                 mRectSrc.bottom = bitmapHeight;
             }
             
-            Bitmap bm = addOverlay(mBitmap, zoomX, zoomY);
+            Bitmap bm = addOverlay(bmMap, zoomX, zoomY);
             canvas.drawBitmap(bm, mRectSrc, mRectDst, mPaint);
         }
     }
@@ -183,14 +183,17 @@ public class ImageZoomView extends View implements Observer {
 	    Canvas c = new Canvas(bmOverlay);
 	    c.drawBitmap(map, new Matrix(), mPaint);
 	    Bitmap bmMarker = mm.getMarkerBm();
-	    for (OverlayPath path: mm.getPaths()) {
-	    	c.drawLine(path.marker1.x, path.marker1.y, path.marker2.x, path.marker2.y, mPaint);
-	    }	    
+	    //for (OverlayPath path: mm.getPaths()) {
+	    //	c.drawLine(path.marker1.x, path.marker1.y, path.marker2.x, path.marker2.y, mPaint);
+	    //}	    
 	    
-	    for (OverlayMarker marker: mm.getMarkers()) {
+	    for (MapNode marker: mm.getMarkers()) {
 		    Matrix mMat1 = new Matrix();
-		    mMat1.setTranslate(marker.x-bmMarker.getWidth()/2-28, marker.y-bmMarker.getHeight());
-		    mMat1.postScale(1/zX, 1/zY, marker.x, marker.y);
+		    int xpx, ypx;
+		    xpx = (int) (marker.texu * bmMap.getWidth());
+		    ypx = (int) (marker.texv * bmMap.getHeight());
+		    mMat1.setTranslate(xpx-bmMarker.getWidth()/2-28, ypx-bmMarker.getHeight());
+		    mMat1.postScale(1/zX, 1/zY, xpx, ypx);
 	    	c.drawBitmap(bmMarker, mMat1, mPaint);
 	    }
 	    return bmOverlay;
@@ -198,10 +201,8 @@ public class ImageZoomView extends View implements Observer {
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
-        mBitmap = mm.getBitmap();
-        mAspectQuotient.updateAspectQuotient(right - left, bottom - top, mBitmap.getWidth(),
-                mBitmap.getHeight());
-        mAspectQuotient.notifyObservers();
+       mAspectQuotient.updateAspectQuotient(right - left, bottom - top, bmMap.getWidth(),bmMap.getHeight());
+       mAspectQuotient.notifyObservers();
     }
 
     // implements Observer

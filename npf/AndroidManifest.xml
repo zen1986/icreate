@@ -7,7 +7,6 @@
 
     <application android:icon="@drawable/icon" android:label="@string/app_name">
         <activity android:name=".NPFMapActivity"></activity>
-        <activity android:name=".LocateOriginActivity"></activity>
         <activity android:name=".NPFStartActivity">            
         <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
