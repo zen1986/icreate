@@ -1,21 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@android:id/tabhost"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:padding="5dp">
-        <TabWidget
-            android:id="@android:id/tabs"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
-        <FrameLayout
-            android:id="@android:id/tabcontent"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:padding="5dp" />
-    </LinearLayout>
-</TabHost>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	>
+	<TableLayout 
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:stretchColumns="1"
+		android:padding="3dip">
+		<TableRow>
+			<TextView 
+			android:layout_column="1"
+			android:layout_height="wrap_content" 
+			android:text="Origin" 
+			android:gravity="left"/>
+			<AutoCompleteTextView 
+			    android:id="@+id/autocomplete_origin"
+				android:completionThreshold="1" 
+				android:layout_height="wrap_content" 
+				android:gravity="right"
+				android:layout_width="200sp"
+				/>
+		</TableRow>
+		<TableRow>
+			<TextView 
+			android:layout_column="1"
+			android:layout_height="wrap_content" 
+			android:text="Destination" 
+			android:gravity="left"/>
+			<AutoCompleteTextView  
+			    android:id="@+id/autocomplete_destination"
+				android:completionThreshold="1" 
+				android:layout_height="wrap_content" 
+				android:gravity="right"
+				android:layout_width="200sp"
+				/>
+		</TableRow>
+		<TableRow>
+   			<Button 
+   			android:layout_column="1"
+   			android:text="Submit" 
+   			android:id="@+id/get_location" 
+   			/>
+
+			<Button 
+			android:id="@+id/locate_src_button"
+			
+			
+			android:text="locate using GPS"/>
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

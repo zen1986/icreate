@@ -32,6 +32,7 @@ public class DataCache {
 	private void loadObjects() {
 		loadNodes();
 		loadLocations();
+		loadNeighbors();
 	}
 	
 	private void loadNodes() {
@@ -53,9 +54,22 @@ public class DataCache {
 			k++;
 		}
 	}
+	private void loadNeighbors() {
+		for (MapNode n:nodes) {
+			Cursor c = db.fetchNodeNeighbor(n._id);
+			while (c.moveToNext()) {
+				int nid = c.getInt(c.getColumnIndexOrThrow("node2"));
+				n.neighbors.add(nid);
+			}
+		}
+	}
 	
 	public String[] getLocationNames() {
 		return locations;
+	}
+	
+	public int getNodeCount() {
+		return nodes.size();
 	}
 	
 	public MapNode getNodeByName(String name) {
@@ -65,5 +79,30 @@ public class DataCache {
 			if (n.name.equals(name)) return n;
 		}
 		return null;
+	}
+	public MapNode getNodeById(int id) {
+		Iterator<MapNode> i = nodes.iterator();
+		while (i.hasNext()) {
+			MapNode n = i.next();
+			if (n._id == id) return n;
+		}
+		return null;
+	}
+	
+	public int getNodeIdx(int id) {
+		Iterator<MapNode> i = nodes.iterator();
+		int count=0;
+		while (i.hasNext()) {
+			MapNode n = i.next();
+			if (n._id == id) return count;
+			count++;
+		}
+		return -1;
+	}
+	
+	public void resetNodeVars() {
+		for (MapNode n:nodes) {
+			n.resetPathVar();
+		}
 	}
 }

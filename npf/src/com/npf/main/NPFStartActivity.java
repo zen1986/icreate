@@ -2,10 +2,11 @@ package com.npf.main;
 
 import com.npf.data.DataCache;
 import com.npf.data.MapNode;
-import com.npf.util.GPSLocation;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -18,14 +19,12 @@ public class NPFStartActivity extends Activity {
     private String locations[];
     private DataCache dbcache;
     private InputManager im;
-    private final int DIALOG_GPS_SRC=0;
-    private final int DIALOG_GPS_DST=1;
     
 	/** Called when the activity is first created. */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
-	    setContentView(R.layout.get_input);
+	    setContentView(R.layout.main);
 	    
 	    dbcache = DataCache.getInstance(getApplicationContext());
         im = InputManager.getInstance(this);
@@ -42,13 +41,7 @@ public class NPFStartActivity extends Activity {
 	    final Button src_btn = (Button) findViewById(R.id.locate_src_button);
 	    src_btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-            	showDialog(DIALOG_GPS_SRC);
-            }
-        });
-        final Button dst_btn = (Button) findViewById(R.id.locate_dst_button);
-        dst_btn.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-            	showDialog(DIALOG_GPS_DST);
+            	showDialog(0);
             }
         });
         
@@ -86,20 +79,18 @@ public class NPFStartActivity extends Activity {
 		
 	}
 	
-	protected Dialog onCreateDialog (int id, Bundle args) {
-		GPSLocation gpsLoc= new GPSLocation(this);
-		Dialog d;
-		switch (id) {
-		case DIALOG_GPS_SRC:
-			d = gpsLoc.createDialog(auto_origin);
-			break;
-		case DIALOG_GPS_DST:
-			d = gpsLoc.createDialog(auto_dest);
-			break;
-		default:
-			d=null;
-		}
-		return d;
+	protected Dialog onCreateDialog (int id) {
+		final CharSequence[] items = {"Red", "Green", "Blue"};
+
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setTitle("Pick nearby location");
+		builder.setItems(items, new DialogInterface.OnClickListener() {
+		    public void onClick(DialogInterface dialog, int item) {
+		    	auto_origin.setText(items[item]);
+		    }
+		});
+		AlertDialog n =  builder.create();
+		return n;
 	}
 	
 	@Override 

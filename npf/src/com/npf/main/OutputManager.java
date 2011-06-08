@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.util.Log;
+
 import com.npf.data.DataCache;
 import com.npf.data.MapNode;
 import com.npf.main.R;
@@ -27,15 +29,15 @@ public class OutputManager {
     private InputManager im;
     private ArrayList<MapNode> markers;
     
+    private Pathfinder pf;
+    
 	private OutputManager(Context t) {
 		ctx = t;
 		dbcache = DataCache.getInstance(t);
 		im = InputManager.getInstance(t);
-		markers = new ArrayList<MapNode>();
         bmMap = BitmapFactory.decodeResource(ctx.getResources(), R.drawable.nusmap2);
         bmMarker = BitmapFactory.decodeResource(ctx.getResources(), R.drawable.pin); 
         bmOverlay = Bitmap.createBitmap(bmMap.getWidth(), bmMap.getHeight(), bmMap.getConfig());
-        loadMarkers();
 	}
 	
 	public static synchronized OutputManager getInstance(Context t) {
@@ -71,9 +73,12 @@ public class OutputManager {
     public Bitmap getMarkerBm() {
     	return bmMarker;
     }
-    public void loadMarkers() {
-    	markers.add(dbcache.getNodeByName(im.getSourceLocation()));
-    	markers.add(dbcache.getNodeByName(im.getSourceLocation()));
+    public void markPath() {
+    	pf = new Pathfinder(dbcache.getNodeByName(im.getSourceLocation()),dbcache.getNodeByName(im.getDestinationLocation()));
+    	markers=pf.getPath();
+    	for (MapNode n:markers) {
+    		Log.i("NPFdebug", n.name);
+    	}
     }
     
     public ArrayList<MapNode> getMarkers() {

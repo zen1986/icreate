@@ -36,6 +36,7 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 
+import java.util.Iterator;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -183,11 +184,21 @@ public class ImageZoomView extends View implements Observer {
 	    Canvas c = new Canvas(bmOverlay);
 	    c.drawBitmap(map, new Matrix(), mPaint);
 	    Bitmap bmMarker = mm.getMarkerBm();
-	    //for (OverlayPath path: mm.getPaths()) {
-	    //	c.drawLine(path.marker1.x, path.marker1.y, path.marker2.x, path.marker2.y, mPaint);
-	    //}	    
 	    
-	    for (MapNode marker: mm.getMarkers()) {
+	    Iterator<MapNode> i = mm.getMarkers().iterator();
+	    MapNode n1 = i.next();
+	    while (i.hasNext()) {
+	    	MapNode n2 = i.next();
+	    	int x1px, y1px, x2px, y2px;
+		    x1px = (int) (n1.texu * bmMap.getWidth());
+		    y1px = (int) (n1.texv * bmMap.getHeight());
+		    x2px = (int) (n2.texu * bmMap.getWidth());
+		    y2px = (int) (n2.texv * bmMap.getHeight());
+	    	c.drawLine(x1px, y1px, x2px, y2px, mPaint);
+	    	n1 = n2;
+	    }	    
+	    
+	    /*for (MapNode marker: mm.getMarkers()) {
 		    Matrix mMat1 = new Matrix();
 		    int xpx, ypx;
 		    xpx = (int) (marker.texu * bmMap.getWidth());
@@ -195,7 +206,7 @@ public class ImageZoomView extends View implements Observer {
 		    mMat1.setTranslate(xpx-bmMarker.getWidth()/2-28, ypx-bmMarker.getHeight());
 		    mMat1.postScale(1/zX, 1/zY, xpx, ypx);
 	    	c.drawBitmap(bmMarker, mMat1, mPaint);
-	    }
+	    }*/
 	    return bmOverlay;
     }
     @Override

@@ -19,6 +19,7 @@ public class NPFMapActivity extends Activity {
         setContentView(R.layout.map);
         mZoomView = (ImageZoomView)findViewById(R.id.zoomview);
         mm.initView(mZoomView);
+        mm.markPath();
     }
     
     @Override
