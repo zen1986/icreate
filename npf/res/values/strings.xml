@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, NPFActivity!</string>
+    <string name="app_name">NUS Path Finder</string>
+    <string name="menu_reset">Menu Reset</string>
+    <string name="lat">latitude</string>
+    <string name="longi">longitude</string>
+    <string name="submit">Submit</string>
+</resources>

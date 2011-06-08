@@ -1,0 +1,21 @@
+BusStop: (extend MapNode)
+	bus: ShuttleBus 
+
+Room: (extend MapNode)
+	category: Category
+	building: String -- foreign key
+
+Building: (extend MapNode)
+
+MapNode:
+	name: String --primary key
+	description: String
+	geoloc: Number pair [latitude, longitude]
+	neighbors: List<MapNode>
+
+ShuttleBus:
+	name: String [A1, A2, B, C, D] -- primary key
+	stops: String, String, String, ...
+
+enum Category:
+	researchInst, library, lectureTheatre, etc.

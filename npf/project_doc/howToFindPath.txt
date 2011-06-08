@@ -1,0 +1,27 @@
+use A*search
+
+MapNode {
+	string name;
+	float longitude;
+	float latitude;
+	Arraylist neighbors;
+	float f;
+	float g;
+	float h;
+}
+
+use mapNode to find path
+1. replace the cost calculation with time:
+		distance between node
+	time =  ---------------------
+		   estimated speed
+	the speed could be 3m/s for walking or 10m/s for bus travelling 
+
+2. when we get a neighbor node, we first cast it to its original type, i.e. building / busstop / empty
+   then we decide which speed to use.
+   
+   	for g value 
+   	if both node are bus stop then pick bus speed , otherwise pick walk speed 
+	for f value 
+	if start node is bus stop then take bus speed , otherwise take walk speed 
+   

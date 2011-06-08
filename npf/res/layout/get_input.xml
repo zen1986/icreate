@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	>
+	<TableLayout 
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:stretchColumns="2">
+		<TableRow>
+			<TextView android:layout_column="1"
+				android:layout_height="wrap_content" android:text="Origin" />
+			<AutoCompleteTextView android:layout_column="2"
+			    android:id="@+id/autocomplete_origin"
+				android:completionThreshold="1" 
+				android:layout_height="wrap_content" />
+			<Button android:id="@+id/locate_src_button" android:layout_column="3"
+			    android:layout_height="wrap_content" 
+			    android:padding="7dp"
+			    android:background="@drawable/locatebutton"/>
+		</TableRow>
+		<TableRow>
+			<TextView android:layout_column="1"
+				android:layout_height="wrap_content" android:text="Destination" />
+			<AutoCompleteTextView  android:layout_column="2"
+			    android:id="@+id/autocomplete_destination"
+				android:completionThreshold="1" 
+				android:layout_height="wrap_content" />
+			<Button android:id="@+id/locate_dst_button" android:layout_column="3"
+			    android:layout_height="wrap_content" 
+			    android:padding="7dp"
+			    android:background="@drawable/locatebutton"/>
+		</TableRow>
+	</TableLayout>
+   <Button android:text="Submit" android:id="@+id/get_location" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+</LinearLayout>
