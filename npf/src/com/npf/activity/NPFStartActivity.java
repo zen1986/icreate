@@ -7,10 +7,8 @@ import com.npf.logic.InputManager;
 import com.npf.main.R;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
@@ -26,11 +24,27 @@ public class NPFStartActivity extends Activity {
     private DataCache dbcache;
     private InputManager im;
     private GPSLocator gps;
-    private final int WAITING = 0;
+    //private final int WAITING = 0;
     private final int SHOWING = 1;
 	private Location gpsLocation;
 	private ProgressDialog progressDialog;
 	
+    private Handler handler = new Handler()
+    {
+        public void handleMessage(android.os.Message msg)
+        {
+            switch (msg.what)
+            {
+                case 0:
+                	progressDialog.dismiss();
+                	gps.stopUpdate();
+                	
+                	showDialog(SHOWING);
+                	break;
+            }
+        }
+    };
+    
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
@@ -56,16 +70,18 @@ public class NPFStartActivity extends Activity {
 	    final Button src_btn = (Button) findViewById(R.id.locate_src_button);
 	    src_btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-        		gps.startUpdate();
+        		
         		
         		progressDialog = new ProgressDialog(NPFStartActivity.this);
         		progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-        		progressDialog.setMessage("Loading...");
+        		progressDialog.setMessage("Locating Current Position...");
         		progressDialog.setCancelable(false);
         		progressDialog.show();
         		
+        		gps.startUpdate();
                 progressDialog.show();
                 
+                //thread loading the 1st GPS location
         		new Thread() {
         			public void run() {
         				while (true) {
@@ -101,32 +117,14 @@ public class NPFStartActivity extends Activity {
 				}
 			}
 		});
-        
 	}
-	
-    Handler handler = new Handler()
-    {
-        public void handleMessage(android.os.Message msg)
-        {
-            switch (msg.what)
-            {
-                case 0:
-                	progressDialog.dismiss();
-                	gps.stopUpdate();
-
-                	showDialog(SHOWING);
-                	break;
-            }
-        }
-    };
-    
     
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		if (resultCode == RESULT_OK&& requestCode == 0) {
+		/*if (resultCode == RESULT_OK&& requestCode == 0) {
 			String desiredOrigin = data.getStringExtra("desiredOrigin");
 			auto_origin.setText(desiredOrigin);
-		}
+		}*/
 	}
 	
 	protected void onPrepareDialog (int id, Dialog dialog) {
@@ -134,29 +132,7 @@ public class NPFStartActivity extends Activity {
 	}
 	
 	protected Dialog onCreateDialog (int id) {
-		Dialog d;
-		switch (id) {
-		case WAITING:
-			ProgressDialog dialog = ProgressDialog.show(this, "", "Loading. Please wait...", true);
-			d = dialog;
-			break;
-		case SHOWING:
-			final CharSequence[] items = {"Red", "Green", "Blue"};
-			
-			AlertDialog.Builder builder = new AlertDialog.Builder(this);
-			builder.setTitle("Pick nearby location");
-			builder.setItems(items, new DialogInterface.OnClickListener() {
-			    public void onClick(DialogInterface dialog, int item) {
-			    	auto_origin.setText(items[item]);
-			    }
-			});
-			AlertDialog n =  builder.create();
-			d = n;
-			break;
-		default:
-			d = null;
-		}
-		return d;
+		return gps.getDialog(auto_origin);
 	}
 	
 	@Override 

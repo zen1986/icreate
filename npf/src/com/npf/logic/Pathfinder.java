@@ -15,7 +15,6 @@ public class Pathfinder {
 	private ArrayList<MapNode> path;
 	private final int WALK_SPEED_PER_MIN = 70;
 	private final int BUS_SPEED_PER_MIN = 500;
-	private final int EARTH_RADIUS = 6371000;
 	
 	public Pathfinder(MapNode src, MapNode dest) {
 		dbcache = DataCache.getInstance(null);
@@ -47,20 +46,8 @@ public class Pathfinder {
 		}
 	}
 	
-	private double distance(MapNode n1, MapNode n2) {
-		double dLat = Math.toRadians(n2.latitude-n1.latitude);
-		double dLon = Math.toRadians(n2.longitude - n1.longitude);
-		double lat1 = Math.toRadians(n1.latitude);
-		double lat2 = Math.toRadians(n2.latitude);
-		
-		double a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-				Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2);
-		
-		return 2 * EARTH_RADIUS * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-	}
-	
 	private double travelTime(MapNode n1, MapNode n2) {
-		double dist = distance(n1, n2); //meters
+		double dist = n1.distance(n2.latitude, n2.longitude); //meters
 		double time;
 		if (n1.isBusStop && n2.isBusStop) {
 			time = dist/BUS_SPEED_PER_MIN;

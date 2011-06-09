@@ -16,6 +16,8 @@ public class MapNode implements Comparable<MapNode> {
 	public ArrayList<Integer> neighbors;//store _id
 	public int _id;
 	public boolean isBusStop;
+
+	private final int EARTH_RADIUS = 6371000;
 	
 	public MapNode(Cursor c) {
 		_id = c.getInt(c.getColumnIndexOrThrow("_id"));
@@ -45,4 +47,15 @@ public class MapNode implements Comparable<MapNode> {
 		return (int) ((g+h-n.getF()) * 1000);
 	}
 	
+	public double distance(double lat, double lng) {
+		double dLat = Math.toRadians(lat-latitude);
+		double dLon = Math.toRadians(lng-longitude);
+		double lat1 = Math.toRadians(latitude);
+		double lat2 = Math.toRadians(lat);
+		
+		double a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+				Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2);
+		
+		return 2 * EARTH_RADIUS * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+	}
 }

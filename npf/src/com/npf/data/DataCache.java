@@ -105,4 +105,8 @@ public class DataCache {
 			n.resetPathVar();
 		}
 	}
+	
+	public MapNode getNodeByIdx(int idx) {
+		return nodes.get(idx);
+	}
 }

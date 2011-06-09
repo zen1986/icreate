@@ -1,11 +1,20 @@
 package com.npf.gps;
 
+import java.util.ArrayList;
+
+import com.npf.data.DataCache;
+import com.npf.data.MapNode;
+
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.location.LocationProvider;
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.EditText;
 
 public class GPSLocator {
 
@@ -13,11 +22,15 @@ public class GPSLocator {
 	private LocationListener locationListener;
 	private String locationProvider = LocationManager.GPS_PROVIDER;
 	private Location bestKnownLocation;
+	private Context ctx;
+	private DataCache dbcache;
+	private int NEARBY_THRESHOLD = 200;
 	
 	public GPSLocator(Context c) {
-		
+		ctx = c;
+		dbcache = DataCache.getInstance(ctx);
 		// Acquire a reference to the system Location Manager
-		locationManager = (LocationManager) c.getSystemService(Context.LOCATION_SERVICE);
+		locationManager = (LocationManager) ctx.getSystemService(Context.LOCATION_SERVICE);
 	
 		// Define a listener that responds to location updates
 		locationListener = new LocationListener() {
@@ -116,5 +129,35 @@ public class GPSLocator {
 	      return provider2 == null;
 	    }
 	    return provider1.equals(provider2);
+	}
+	
+	private String[] getNearbyLocations() {
+		int count = dbcache.getNodeCount();
+		ArrayList<String> names = new ArrayList<String>();
+		for (int i=0;i<count;i++) {
+			MapNode n = dbcache.getNodeByIdx(i);
+			double dist = n.distance(bestKnownLocation.getLatitude(), bestKnownLocation.getLongitude());
+			if (dist < NEARBY_THRESHOLD){
+				names.add(n.name);
+			}
+			Log.i("NPFdebug","Checking node "+n.name+" distance "+dist);
+		}
+		String[] n = new String[names.size()];
+		names.toArray(n);
+		return  n;
+	}
+	
+	public Dialog getDialog(final EditText et) {
+		final CharSequence[] items = getNearbyLocations();
+		
+		AlertDialog.Builder builder = new AlertDialog.Builder(ctx);
+		builder.setTitle("Pick nearby location");
+		builder.setItems(items, new DialogInterface.OnClickListener() {
+		    public void onClick(DialogInterface dialog, int item) {
+		    	et.setText(items[item]);
+		    }
+		});
+		AlertDialog n =  builder.create();
+		return n;
 	}
 }
