@@ -35,7 +35,7 @@ public class OutputManager {
 		ctx = t;
 		dbcache = DataCache.getInstance(t);
 		im = InputManager.getInstance(t);
-        bmMap = BitmapFactory.decodeResource(ctx.getResources(), R.drawable.nusmap2);
+        bmMap = BitmapFactory.decodeResource(ctx.getResources(), R.drawable.nus);
         bmMarker = BitmapFactory.decodeResource(ctx.getResources(), R.drawable.pin); 
         bmOverlay = Bitmap.createBitmap(bmMap.getWidth(), bmMap.getHeight(), bmMap.getConfig());
 	}

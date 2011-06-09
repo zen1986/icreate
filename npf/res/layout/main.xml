@@ -39,19 +39,17 @@
 		<TableRow>
    			<Button 
    			android:layout_column="1"
-   			android:text="Submit" 
+   			android:text="Start" 
    			android:id="@+id/get_location" 
    			/>
 
 			<Button 
 			android:id="@+id/locate_src_button"
-			
-			
-			android:text="locate using GPS"/>
+			android:text="Locate using GPS"/>
 		</TableRow>
 	</TableLayout>
 	<ListView 
-	android:layout_height="wrap_content" 
+	android:layout_height="fill_parent" 
 	android:id="@+id/route_list" 
 	android:layout_width="fill_parent">
 	</ListView>

@@ -1,15 +1,5 @@
 use A*search
 
-MapNode {
-	string name;
-	float longitude;
-	float latitude;
-	Arraylist neighbors;
-	float f;
-	float g;
-	float h;
-}
-
 use mapNode to find path
 1. replace the cost calculation with time:
 		distance between node

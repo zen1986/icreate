@@ -1,4 +1,4 @@
-package com.npf.gps;
+package com.npf.logic;
 
 import java.util.ArrayList;
 
@@ -20,11 +20,11 @@ public class GPSLocator {
 
 	private LocationManager locationManager;
 	private LocationListener locationListener;
-	private String locationProvider = LocationManager.GPS_PROVIDER;
+	private String locationProvider = LocationManager.NETWORK_PROVIDER;
 	private Location bestKnownLocation;
 	private Context ctx;
 	private DataCache dbcache;
-	private int NEARBY_THRESHOLD = 200;
+	private int NEARBY_THRESHOLD = 1000;
 	
 	public GPSLocator(Context c) {
 		ctx = c;
@@ -142,9 +142,16 @@ public class GPSLocator {
 			}
 			Log.i("NPFdebug","Checking node "+n.name+" distance "+dist);
 		}
-		String[] n = new String[names.size()];
-		names.toArray(n);
-		return  n;
+		if (names.size()>0) {
+			String[] n = new String[names.size()];
+		
+			names.toArray(n);
+			return  n;
+		}
+		else {
+			String[] n = new String[]{"You are not able to be located."};
+			return n;
+		}
 	}
 	
 	public Dialog getDialog(final EditText et) {

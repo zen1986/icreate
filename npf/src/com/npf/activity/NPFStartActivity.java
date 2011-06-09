@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import com.npf.data.DataCache;
 import com.npf.data.MapNode;
-import com.npf.gps.GPSLocator;
+import com.npf.logic.GPSLocator;
 import com.npf.logic.InputManager;
 import com.npf.logic.Pathfinder;
 import com.npf.main.R;
@@ -17,7 +17,6 @@ import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
@@ -128,8 +127,12 @@ public class NPFStartActivity extends Activity {
 			    	pf = new Pathfinder(dbcache.getNodeByName(im.getSourceLocation()),dbcache.getNodeByName(im.getDestinationLocation()));
 			    	ArrayList<MapNode> pathNodes =pf.getPath();
 			    	ArrayList<String> nodes = new ArrayList<String>();
-			    	String[] str_nodes = new String[pathNodes.size()];
-			    	for (MapNode n:pathNodes) {
+			    	String[] str_nodes = new String[pathNodes.size()+1];
+			    	nodes.add("Follow the path below:");
+			    	
+			    	//need to add path node from behind to front
+			    	for (int i=pathNodes.size()-1; i>=0;i--) {
+			    		MapNode n = pathNodes.get(i);
 			    		nodes.add(n.name);
 			    	}
 			    	

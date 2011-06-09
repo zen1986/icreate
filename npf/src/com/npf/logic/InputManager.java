@@ -1,19 +1,19 @@
 package com.npf.logic;
 
 import android.content.Context;
-import com.npf.data.DataCache;
+//import com.npf.data.DataCache;
 
 public class InputManager {
 
-	private DataCache dbcache;
-	private Context ctx;
+	//private DataCache dbcache;
+	//private Context ctx;
 	private String source;
 	private String destination;
 	private static InputManager _instance;
 	
 	public InputManager(Context c) {
-		ctx = c;
-		dbcache = DataCache.getInstance(ctx);
+		//ctx = c;
+		//dbcache = DataCache.getInstance(ctx);
 	}
 	
 	public static InputManager getInstance(Context c) {

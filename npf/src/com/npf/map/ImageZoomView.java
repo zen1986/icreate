@@ -183,7 +183,7 @@ public class ImageZoomView extends View implements Observer {
 	    bmOverlay.eraseColor(0);
 	    Canvas c = new Canvas(bmOverlay);
 	    c.drawBitmap(map, new Matrix(), mPaint);
-	    Bitmap bmMarker = mm.getMarkerBm();
+	    //Bitmap bmMarker = mm.getMarkerBm();
 	    
 	    Iterator<MapNode> i = mm.getMarkers().iterator();
 	    MapNode n1 = i.next();
