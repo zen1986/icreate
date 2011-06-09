@@ -1,5 +1,7 @@
-package com.npf.main;
+package com.npf.activity;
 
+import com.npf.logic.OutputManager;
+import com.npf.main.R;
 import com.npf.map.ImageZoomView;
 
 import android.app.Activity;

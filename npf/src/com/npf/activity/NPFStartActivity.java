@@ -1,7 +1,9 @@
-package com.npf.main;
+package com.npf.activity;
 
 import com.npf.data.DataCache;
 import com.npf.data.MapNode;
+import com.npf.logic.InputManager;
+import com.npf.main.R;
 
 import android.app.Activity;
 import android.app.AlertDialog;

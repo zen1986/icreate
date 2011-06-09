@@ -1,4 +1,4 @@
-package com.npf.main;
+package com.npf.logic;
 
 import android.content.Context;
 import com.npf.data.DataCache;

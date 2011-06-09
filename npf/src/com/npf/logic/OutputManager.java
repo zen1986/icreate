@@ -1,4 +1,4 @@
-package com.npf.main;
+package com.npf.logic;
 
 import java.util.ArrayList;
 import android.content.Context;
