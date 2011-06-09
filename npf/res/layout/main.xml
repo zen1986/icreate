@@ -50,4 +50,10 @@
 			android:text="locate using GPS"/>
 		</TableRow>
 	</TableLayout>
+	<ListView 
+	android:layout_height="wrap_content" 
+	android:id="@+id/route_list" 
+	android:layout_width="fill_parent">
+	</ListView>
+	
 </LinearLayout>

@@ -1,22 +1,29 @@
 package com.npf.activity;
 
+import java.util.ArrayList;
+
 import com.npf.data.DataCache;
 import com.npf.data.MapNode;
 import com.npf.gps.GPSLocator;
 import com.npf.logic.InputManager;
+import com.npf.logic.Pathfinder;
 import com.npf.main.R;
 
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.ListView;
 
 public class NPFStartActivity extends Activity {
     private AutoCompleteTextView auto_origin, auto_dest;
@@ -28,7 +35,10 @@ public class NPFStartActivity extends Activity {
     private final int SHOWING = 1;
 	private Location gpsLocation;
 	private ProgressDialog progressDialog;
-	
+	private ListView routeList;
+    private Pathfinder pf;
+    private Button btnToMap;
+    
     private Handler handler = new Handler()
     {
         public void handleMessage(android.os.Message msg)
@@ -64,9 +74,6 @@ public class NPFStartActivity extends Activity {
 	    auto_dest = (AutoCompleteTextView) findViewById(R.id.autocomplete_destination);
 	    auto_dest.setAdapter(adapter);
 	    
-
-	    
-	    
 	    final Button src_btn = (Button) findViewById(R.id.locate_src_button);
 	    src_btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -98,6 +105,11 @@ public class NPFStartActivity extends Activity {
             }
         });
         
+    	routeList = (ListView) findViewById(R.id.route_list);
+    	
+    	btnToMap = new Button(NPFStartActivity.this);
+    	btnToMap.setText("Go to map");
+		routeList.addFooterView(btnToMap);
         
         final Button submit = (Button) findViewById(R.id.get_location);
         submit.setOnClickListener(new View.OnClickListener() {
@@ -112,8 +124,29 @@ public class NPFStartActivity extends Activity {
 				if (s_node !=null && d_node !=null) {
 					im.setDestinationLocation(d_node.name);
 					im.setSourceLocation(s_node.name);
-					Intent intent = new Intent(NPFStartActivity.this,NPFMapActivity.class);
-					startActivity(intent);
+					
+			    	pf = new Pathfinder(dbcache.getNodeByName(im.getSourceLocation()),dbcache.getNodeByName(im.getDestinationLocation()));
+			    	ArrayList<MapNode> pathNodes =pf.getPath();
+			    	ArrayList<String> nodes = new ArrayList<String>();
+			    	String[] str_nodes = new String[pathNodes.size()];
+			    	for (MapNode n:pathNodes) {
+			    		nodes.add(n.name);
+			    	}
+			    	
+			    	nodes.toArray(str_nodes);
+
+					routeList.setAdapter(new ArrayAdapter<String>(NPFStartActivity.this, R.layout.routelist_item, str_nodes));
+					
+					InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+					imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+					
+					btnToMap.setOnClickListener(new View.OnClickListener() {
+						@Override
+						public void onClick(View arg0) {
+							Intent intent = new Intent(NPFStartActivity.this,NPFMapActivity.class);
+							startActivity(intent);
+						}
+					});
 				}
 			}
 		});
