@@ -41,7 +41,7 @@ import java.util.Observable;
 import java.util.Observer;
 
 import com.npf.data.MapNode;
-import com.npf.main.OutputManager;
+import com.npf.logic.OutputManager;
 
 /**
  * View capable of drawing an image at different zoom state levels
