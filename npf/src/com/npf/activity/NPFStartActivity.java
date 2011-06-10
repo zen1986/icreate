@@ -117,14 +117,14 @@ public class NPFStartActivity extends Activity {
 			public void onClick(View v) {
 				MapNode s_node, d_node;
 				
-				s_node=dbcache.getNodeByName(auto_origin.getText().toString());
-				d_node=dbcache.getNodeByName(auto_dest.getText().toString());
+				s_node=dbcache.getNodeByLocationName(auto_origin.getText().toString());
+				d_node=dbcache.getNodeByLocationName(auto_dest.getText().toString());
 		        
 				if (s_node !=null && d_node !=null) {
 					im.setDestinationLocation(d_node.name);
 					im.setSourceLocation(s_node.name);
 					
-			    	pf = new Pathfinder(dbcache.getNodeByName(im.getSourceLocation()),dbcache.getNodeByName(im.getDestinationLocation()));
+			    	pf = new Pathfinder(s_node,d_node);
 			    	ArrayList<MapNode> pathNodes =pf.getPath();
 			    	ArrayList<String> nodes = new ArrayList<String>();
 			    	String[] str_nodes = new String[pathNodes.size()+1];

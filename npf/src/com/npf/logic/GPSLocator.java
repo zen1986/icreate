@@ -20,11 +20,11 @@ public class GPSLocator {
 
 	private LocationManager locationManager;
 	private LocationListener locationListener;
-	private String locationProvider = LocationManager.NETWORK_PROVIDER;
+	private String locationProvider = LocationManager.GPS_PROVIDER;
 	private Location bestKnownLocation;
 	private Context ctx;
 	private DataCache dbcache;
-	private int NEARBY_THRESHOLD = 1000;
+	private int NEARBY_THRESHOLD = 200;
 	
 	public GPSLocator(Context c) {
 		ctx = c;
@@ -138,7 +138,9 @@ public class GPSLocator {
 			MapNode n = dbcache.getNodeByIdx(i);
 			double dist = n.distance(bestKnownLocation.getLatitude(), bestKnownLocation.getLongitude());
 			if (dist < NEARBY_THRESHOLD){
-				names.add(n.name);
+				for (String name: n.locations) {
+					names.add(name);
+				}
 			}
 			Log.i("NPFdebug","Checking node "+n.name+" distance "+dist);
 		}

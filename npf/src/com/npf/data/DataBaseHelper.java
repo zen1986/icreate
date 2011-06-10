@@ -146,5 +146,11 @@ public class DataBaseHelper extends SQLiteOpenHelper{
     public Cursor fetchNodeNeighbor(int id) {
     	return myDataBase.rawQuery("select node2 from neighbor where node1=?", new String[] {Integer.toString(id)});
     }
- 
+    public Cursor fetchLocationByBuildingName(String name) {
+    	return myDataBase.rawQuery("select * from location where building=?", new String[] {name});
+    }
+    public Cursor fetchLocationByName(String name) {
+    	return myDataBase.rawQuery("select * from location where name=?", new String[] {name});
+    }
+    
 }

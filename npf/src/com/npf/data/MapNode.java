@@ -1,32 +1,32 @@
 package com.npf.data;
 
-import java.util.ArrayList;
-
 import android.database.Cursor;
 
 public class MapNode implements Comparable<MapNode> {
-	public double latitude;
-	public double longitude;
-	public double texu;
-	public double texv;
-	public String name;
+	public final double latitude;
+	public final double longitude;
+	public final double texu;
+	public final double texv;
+	public final String name;
 	public double g,h;
 	public double distanceToSrc;    //meter
 	public double timeToSrc;        //minute
-	public ArrayList<Integer> neighbors;//store _id
-	public int _id;
-	public boolean isBusStop;
+	public final Integer[] neighbors;//store _id
+	public final int _id;
+	public final boolean isBusStop;
+	public final String[] locations;     //the locations this map node contains
 
 	private final int EARTH_RADIUS = 6371000;
 	
-	public MapNode(Cursor c) {
+	public MapNode(Cursor c, Integer[] _neighbors, String[] _locations) {
 		_id = c.getInt(c.getColumnIndexOrThrow("_id"));
 		name = c.getString(c.getColumnIndexOrThrow("name"));
 		latitude = c.getDouble(c.getColumnIndexOrThrow("latitude"));
 		longitude = c.getDouble(c.getColumnIndexOrThrow("longitude"));
 		texu = c.getDouble(c.getColumnIndexOrThrow("texu"));
 		texv = c.getDouble(c.getColumnIndexOrThrow("texv"));
-		neighbors = new ArrayList<Integer>();
+		neighbors = _neighbors;
+		locations = _locations;
 		if (c.getInt(c.getColumnIndexOrThrow("isbusstop"))==1) isBusStop = true;
 		else isBusStop = false;
 	}
