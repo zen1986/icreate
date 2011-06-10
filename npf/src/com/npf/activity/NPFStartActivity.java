@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import com.npf.data.DataCache;
 import com.npf.data.MapNode;
+import com.npf.logic.ComUtil;
 import com.npf.logic.GPSLocator;
 import com.npf.logic.InputManager;
 import com.npf.logic.Pathfinder;
@@ -62,6 +63,7 @@ public class NPFStartActivity extends Activity {
 	    dbcache = DataCache.getInstance(getApplicationContext());
         im = InputManager.getInstance(this);
 	    locations=dbcache.getLocationNames();
+	    locations=ComUtil.decodeAll(locations);
 	    
 	    gps = new GPSLocator(this);
 		
@@ -76,7 +78,6 @@ public class NPFStartActivity extends Activity {
 	    final Button src_btn = (Button) findViewById(R.id.locate_src_button);
 	    src_btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-        		
         		
         		progressDialog = new ProgressDialog(NPFStartActivity.this);
         		progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
@@ -117,8 +118,8 @@ public class NPFStartActivity extends Activity {
 			public void onClick(View v) {
 				MapNode s_node, d_node;
 				
-				s_node=dbcache.getNodeByLocationName(auto_origin.getText().toString());
-				d_node=dbcache.getNodeByLocationName(auto_dest.getText().toString());
+				s_node=dbcache.getNodeByLocationName(ComUtil.encode(auto_origin.getText().toString()));  //encode to compare values from database
+				d_node=dbcache.getNodeByLocationName(ComUtil.encode(auto_dest.getText().toString()));
 		        
 				if (s_node !=null && d_node !=null) {
 					im.setDestinationLocation(d_node.name);

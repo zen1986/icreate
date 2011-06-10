@@ -139,7 +139,7 @@ public class GPSLocator {
 			double dist = n.distance(bestKnownLocation.getLatitude(), bestKnownLocation.getLongitude());
 			if (dist < NEARBY_THRESHOLD){
 				for (String name: n.locations) {
-					names.add(name);
+					names.add(ComUtil.decode(name));  //decode to show user-friendly values
 				}
 			}
 			Log.i("NPFdebug","Checking node "+n.name+" distance "+dist);
