@@ -131,26 +131,31 @@ public class DataBaseHelper extends SQLiteOpenHelper{
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
  
 	}
-    public Cursor fetchMapNode(String nm) throws SQLException {
-    	String sql="select * from node where name=?";
+	
+	//////////////////////query related functions//////////////////////////////////////
+	
+    public Cursor fetchBuildingNode(String nm) throws SQLException {
+    	String sql="select * from building where name=?";
         Cursor mCursor = myDataBase.rawQuery(sql,new String[] {nm} );
         if (mCursor!=null) mCursor.moveToFirst();
         return mCursor;
-
     }
     
-    public Cursor fetchAllMapNodes() {
-        return myDataBase.rawQuery("select * from node", null);
+    public Cursor fetchAllBuildingNodes() {
+        return myDataBase.rawQuery("select * from building", null);
     }
     
     public Cursor fetchNodeNeighbor(int id) {
-    	return myDataBase.rawQuery("select node2 from neighbor where node1=?", new String[] {Integer.toString(id)});
+    	return myDataBase.rawQuery("select node2 from building_neighbour where node1=?", new String[] {Integer.toString(id)});
     }
     public Cursor fetchLocationByBuildingName(String name) {
     	return myDataBase.rawQuery("select * from location where building=?", new String[] {name});
     }
     public Cursor fetchLocationByName(String name) {
     	return myDataBase.rawQuery("select * from location where name=?", new String[] {name});
+    }
+    public Cursor fetchAllBusstopNodes() {
+    	return myDataBase.rawQuery("select * from busstop", null);
     }
     
 }

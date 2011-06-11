@@ -13,7 +13,8 @@ public class DataCache {
 	private DataBaseHelper db;
 	private static DataCache _instance;
 	private Context ctx;
-	private ArrayList<MapNode> nodes;
+	private ArrayList<MapNode> building_nodes;
+	private ArrayList<MapNode> busstop_nodes;
 	private String[] locations;
 	private int totalLocations=0;
 	
@@ -31,48 +32,52 @@ public class DataCache {
 	}
 	
 	private void loadNodes() {
-		nodes = new ArrayList<MapNode>();
-		Cursor cnodes = db.fetchAllMapNodes();
+		loadBuildingNodes();
+		loadBusNodes();
+	}
+	
+	private void loadBusNodes(){
+		busstop_nodes = new ArrayList<MapNode>();
+		Cursor bussCursor = db.fetchAllBusstopNodes();
 		
-		while (cnodes.moveToNext()) {
-			int id = cnodes.getInt(cnodes.getColumnIndexOrThrow("_id"));
-			String name = cnodes.getString(cnodes.getColumnIndexOrThrow("name"));
-			//get neighbours
+		while (bussCursor.moveToNext()) {
+			//need to get adjacent bus stops that a bus can reach
+		}
+	}
+	
+	private void loadBuildingNodes() {
+		building_nodes = new ArrayList<MapNode>();
+		
+		//load building nodes first
+		Cursor buildingCursor = db.fetchAllBuildingNodes();
+		
+		while (buildingCursor.moveToNext()) {
+			int id = buildingCursor.getInt(buildingCursor.getColumnIndexOrThrow("_id"));
+			String name = buildingCursor.getString(buildingCursor.getColumnIndexOrThrow("name"));
+			
+			//get building neighbours
 			Cursor neib = db.fetchNodeNeighbor(id);
-			ArrayList<Integer> nids = new ArrayList<Integer>();
-			while (neib.moveToNext()) {
-				int nid = neib.getInt(neib.getColumnIndexOrThrow("node2"));
-				nids.add(nid);
-			}
-			Integer[] nids_int = new Integer[nids.size()];
-			nids.toArray(nids_int);
-			nids.clear();
+			int[] nids = new int[neib.getCount()];
+			int i=0;
+			while (neib.moveToNext()) {nids[i++] = neib.getInt(neib.getColumnIndexOrThrow("node2"));}
 			
 			//get locations
-			/*
-			 * from location table get all locations that nodes have its containing building
-			 */
-			ArrayList<String> locs = new ArrayList<String>();
 			Cursor loc = db.fetchLocationByBuildingName(name);
-			while (loc.moveToNext()) {
-				locs.add(loc.getString(loc.getColumnIndexOrThrow("name")));
-			}
-			String[] locs_str = new String[locs.size()];
-			locs.toArray(locs_str);
-			totalLocations+=locs.size();
-			locs.clear();
+			String[] locs = new String[loc.getCount()];
+			int k=0;
+			while (loc.moveToNext()) {locs[k++]=loc.getString(loc.getColumnIndexOrThrow("name"));}
 			
-			nodes.add(new MapNode(cnodes, nids_int, locs_str));
+			building_nodes.add(new MapNode(buildingCursor, nids, locs));
 			
 			neib.close();
 			loc.close();
 		}
-		cnodes.close();
+		buildingCursor.close();
 	}
 
 	public String[] getLocationNames() {
 		if (locations==null) {
-			Iterator<MapNode> i = nodes.iterator();
+			Iterator<MapNode> i = building_nodes.iterator();
 			locations = new String[totalLocations];
 			int count = 0;
 			while (i.hasNext()) {
@@ -86,7 +91,7 @@ public class DataCache {
 	}
 	
 	public int getNodeCount() {
-		return nodes.size();
+		return building_nodes.size();
 	}
 	
 	public MapNode getNodeByLocationName(String name) {
@@ -99,7 +104,7 @@ public class DataCache {
 	}
 	
 	public MapNode getNodeByName(String name) {
-		Iterator<MapNode> i = nodes.iterator();
+		Iterator<MapNode> i = building_nodes.iterator();
 		while (i.hasNext()) {
 			MapNode n = i.next();
 			if (n.name.equals(name)) return n;
@@ -108,7 +113,7 @@ public class DataCache {
 		
 	}
 	public MapNode getNodeById(int id) {
-		Iterator<MapNode> i = nodes.iterator();
+		Iterator<MapNode> i = building_nodes.iterator();
 		while (i.hasNext()) {
 			MapNode n = i.next();
 			if (n._id == id) return n;
@@ -117,7 +122,7 @@ public class DataCache {
 	}
 	
 	public int getNodeIdx(int id) {
-		Iterator<MapNode> i = nodes.iterator();
+		Iterator<MapNode> i = building_nodes.iterator();
 		int count=0;
 		while (i.hasNext()) {
 			MapNode n = i.next();
@@ -128,12 +133,12 @@ public class DataCache {
 	}
 	
 	public void resetNodeVars() {
-		for (MapNode n:nodes) {
+		for (MapNode n:building_nodes) {
 			n.resetPathVar();
 		}
 	}
 	
 	public MapNode getNodeByIdx(int idx) {
-		return nodes.get(idx);
+		return building_nodes.get(idx);
 	}
 }

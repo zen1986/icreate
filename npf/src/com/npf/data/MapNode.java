@@ -9,16 +9,17 @@ public class MapNode implements Comparable<MapNode> {
 	public final double texv;
 	public final String name;
 	public double g,h;
-	public double distanceToSrc;    //meter
-	public double timeToSrc;        //minute
-	public final Integer[] neighbors;//store _id
+	public double distanceToSrc;       //meter
+	public double timeToSrc;           //minute
+	public final int[] neighbors;  //store _id   building's neighbours are the building adjacent to it
+									   //            bus stop's neighbours are those adjacent and at low stream
 	public final int _id;
 	public final boolean isBusStop;
 	public final String[] locations;     //the locations this map node contains
 
 	private final int EARTH_RADIUS = 6371000;
 	
-	public MapNode(Cursor c, Integer[] _neighbors, String[] _locations) {
+	public MapNode(Cursor c, int[] _neighbors, String[] _locations) {
 		_id = c.getInt(c.getColumnIndexOrThrow("_id"));
 		name = c.getString(c.getColumnIndexOrThrow("name"));
 		latitude = c.getDouble(c.getColumnIndexOrThrow("latitude"));

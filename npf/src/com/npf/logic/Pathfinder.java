@@ -5,38 +5,70 @@ import java.util.PriorityQueue;
 
 import com.npf.data.DataCache;
 import com.npf.data.MapNode;
+import com.npf.data.MapPath;
 
 public class Pathfinder {
+	
+	/*
+	 * Here I separate the calculation of route that taking a bus and walking
+	 *
+	 * for walking, i just use all node(including bus stops) in calculation
+	 * g and h values are calculated similarly using walking speed
+	 * the distance for g is exact, while for h is estimated
+	 * the outcome is a route with distance and time
+	 * 
+	 * for taking bus, i first get the nearest bus stops between start node and end node respectively
+	 * then use get the buses that travel between this bus stop
+	 * the outcome is a route that walk from start node to first bus stop and take bus to last bus stop and walk to destination
+	 * the distance and time are also calculated
+	 * 
+	 *
+	 **/
 	
 	private ArrayList<MapNode> closedset;
 	private PriorityQueue<MapNode> openset;
 	private MapNode[] camefrom;
 	private DataCache dbcache;
-	private ArrayList<MapNode> path;
-	private final int WALK_SPEED_PER_MIN = 70;
-	private final int BUS_SPEED_PER_MIN = 500;
+	private MapPath busPath;
+	private MapPath walkPath;
 	
 	public Pathfinder(MapNode src, MapNode dest) {
 		dbcache = DataCache.getInstance(null);
+		
+		//initialise helper variables
 		closedset = new ArrayList<MapNode>();
 		openset = new PriorityQueue<MapNode>();
 		camefrom = new MapNode[dbcache.getNodeCount()];
-		path = new ArrayList<MapNode>();
+		walkPath = new MapPath(true);
+		busPath = new MapPath(false);
 		
 		resetNodeVars();
-		findPath(src, dest);
+		findWalkPath(src, dest);
+		findBusPath(src, dest);
 	}
 	
 	private void resetNodeVars() {
 		dbcache.resetNodeVars();
 	}
+	public MapPath getWalkPath() {
+		return walkPath;
+	}
 	
+	public MapPath getBusPath() {
+		return busPath;
+	}
+	
+	///////////////////////////////////////walk path/////////////////////////////////////////////////
+	////  walk path does not consider any bus stop
+	////  g value of each node in the final path = distance from it to start node
+	////  time can be obtain by dividing by walk speed
+	/////////////////////////////////////////////////////////////////////////////////////////////////
 	private double heuristic(MapNode n1, MapNode n2) {
-		return travelTime(n1, n2);
+		return getDist(n1, n2);
 	}
 	
 	private void reconstructPath(MapNode n) {
-		path.add(n);
+		walkPath.addNode(n);
 		MapNode from = camefrom[dbcache.getNodeIdx(n._id)];
 		if (from==null) { //reach the start node
 			return;
@@ -46,23 +78,11 @@ public class Pathfinder {
 		}
 	}
 	
-	private double travelTime(MapNode n1, MapNode n2) {
-		double dist = n1.distance(n2.latitude, n2.longitude); //meters
-		double time;
-		if (n1.isBusStop && n2.isBusStop) {
-			time = dist/BUS_SPEED_PER_MIN;
-		}
-		else {
-			time = dist/WALK_SPEED_PER_MIN;
-		}
-		return time;
+	private double getDist(MapNode n1, MapNode n2) {
+		return n1.distance(n2.latitude, n2.longitude); //meters
 	}
 	
-	public ArrayList<MapNode> getPath() {
-		return path;
-	}
-	
-	private boolean findPath(MapNode src, MapNode dst) {
+	private boolean findWalkPath(MapNode src, MapNode dst) {
 		openset.add(src);
 		src.g = 0.0;
 		src.h = heuristic(src, dst);
@@ -77,7 +97,7 @@ public class Pathfinder {
 			for(int yid:x.neighbors) {
 				MapNode y = dbcache.getNodeById(yid);
 				if (closedset.contains(y)) continue;
-				double tentative_g_score = x.g + travelTime(x,y);
+				double tentative_g_score = x.g + getDist(x,y);
 				boolean tentative_better;
 				if (!openset.contains(y)) {
 					tentative_better=true;
@@ -100,4 +120,26 @@ public class Pathfinder {
 		}
 		return false;
 	}
+
+
+///////////////////////////////////end of walk path/////////////////////////////////////////////////////////
+
+
+//////////////////////////////////Bus Route//////////////////////////////////////////////////////////////
+///////// obtain nearest 2 bus stop first
+///////// check bus between them
+///////// account for any transit if necessary
+///////// in any case, at most 1 transfer is needed to reach any 2 bus stop
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	private MapNode findNearestBusstop(MapNode n) {
+		
+	}
+
+	private boolean findBusPath(MapNode src, MapNode dest) {
+		MapNode nearestSrcBusstop = findNearestBusstop(src);
+		MapNode nearestDstBusStop = findNearestBusstop(dest);
+		return false;
+	}
+
 }
