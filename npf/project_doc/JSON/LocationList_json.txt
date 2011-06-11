@@ -1,0 +1,2329 @@
+{
+	"LocationList": [
+	{
+		"Title":"Adaptive Computing Research Lab",
+		"Alias":"acrl",
+		"Type":"Faculty",
+		"Building":"COM1"
+	},
+	{
+		"Title":"Add Value Machine (Block ADM)",
+		"Alias":"ezlink",
+		"Building":"Block ADM"
+	},
+	{
+		"Title":"Algorithms Research Lab",
+		"Alias":"arl",
+		"Type":"Faculty",
+		"Building":"COM1"
+	},
+	{
+		"Title":"Alice Lee Centre for Nursing Studies",
+		"Alias":"cns",
+		"Type":"Faculty",
+		"Building":"E3A"
+	},
+	{
+		"Title":"Animal Holding Unit",
+		"Alias":"ahu",
+		"Building":"MD1"
+	},
+	{
+		"Title":"Antenatal Diagnostic Centre",
+		"Alias":"adc",
+		"Building":"MD4"
+	},
+	{
+		"Title":"Architectural Studios",
+		"Type":"Faculty",
+		"Building":"SDE3"
+	},
+	{
+		"Title":"AS1",
+		"Type":"Faculty",
+		"Building":"AS1"
+	},
+	{
+		"Title":"AS2",
+		"Type":"Faculty",
+		"Building":"AS2"
+	},
+	{
+		"Title":"AS3",
+		"Type":"Faculty",
+		"Building":"AS3"
+	},
+	{
+		"Title":"AS4",
+		"Type":"Faculty",
+		"Building":"AS4"
+	},
+	{
+		"Title":"AS5",
+		"Type":"Faculty",
+		"Building":"AS5"
+	},
+	{
+		"Title":"AS6",
+		"Type":"Faculty",
+		"Building":"AS6"
+	},
+	{
+		"Title":"AS7",
+		"Type":"Faculty",
+		"Building":"AS7"
+	},
+	{
+		"Title":"Asia Research Institute (ARI)",
+		"Alias":"ari",
+		"Building":"Tower Block, BTC"
+	},
+	{
+		"Title":"Association of Pacific Rim Universities",
+		"Alias":"apru",
+		"Building":"Shaw Foundation Alumni House"
+	},
+	{
+		"Title":"AXS Stations (Block ADM)",
+		"Building":"Block ADM"
+	},
+	{
+		"Title":"AXS Stations (LT27)",
+		"Building":"Lecture Theatre 27"
+	},
+	{
+		"Title":"Bachelor of Technology Programme",
+		"Type":"Faculty",
+		"Building":"EA"
+	},
+	{
+		"Title":"Bio-Sciences Complex",
+		"Alias":"bsc",
+		"Building":"S16"
+	},
+	{
+		"Title":"Bioinformatics Centre",
+		"Type":"Faculty",
+		"Building":"MD7"
+	},
+	{
+		"Title":"BIZ1",
+		"Type":"Faculty",
+		"Building":"BIZ1"
+	},
+	{
+		"Title":"BIZ2",
+		"Type":"Faculty",
+		"Building":"BIZ2"
+	},
+	{
+		"Title":"Bukit Timah Campus Management Office",
+		"Building":"Block B, BTC"
+	},
+	{
+		"Title":"Burger King",
+		"Building":"The Deck"
+	},
+	{
+		"Title":"Business School (Dean&apos;s Office)",
+		"Type":"Faculty",
+		"Building":"BIZ1"
+	},
+	{
+		"Title":"Cancer Science Institute of Singapore",
+		"Alias":"csi",
+		"Building":"Centre for Life Sciences"
+	},
+	{
+		"Title":"Central Library",
+		"Alias":"cl",
+		"Building":"Central Library"
+	},
+	{
+		"Title":"Central Square Canteen",
+		"Alias":"yih canteen",
+		"Type":"Canteen",
+		"Building":"Central Square"
+	},
+	{
+		"Title":"Centre for Advanced Chemical Engineering",
+		"Alias":"cace",
+		"Building":"E5"
+	},
+	{
+		"Title":"Centre for Advanced Computations in Engineering Science (ACES)",
+		"Alias":"caces",
+		"Building":"EA"
+	},
+	{
+		"Title":"Centre for Biomedical Ethics",
+		"Alias":"cbe",
+		"Building":"MD11"
+	},
+	{
+		"Title":"Centre for Construction Materials and Technology",
+		"Alias":"caces",
+		"Building":"E1A"
+	},
+	{
+		"Title":"Centre for Design Technology",
+		"Alias":"cdt",
+		"Building":"E4"
+	},
+	{
+		"Title":"Centre for Development of Teaching &amp; Learning",
+		"Alias":"cdtl",
+		"Building":"Central Library Annexe"
+	},
+	{
+		"Title":"Centre for e-Business",
+		"Alias":"ceb",
+		"Building":"COM2"
+	},
+	{
+		"Title":"Centre for English Language Communication",
+		"Alias":"celc",
+		"Building":"CELC"
+	},
+	{
+		"Title":"Centre for Environmental and Occupational Health Research",
+		"Alias":"ceohr",
+		"Building":"MD3"
+	},
+	{
+		"Title":"Centre for Industrial Mathematics",
+		"Alias":"cim",
+		"Building":"S14"
+	},
+	{
+		"Title":"Centre for Instructional Technology (Central Library Annexe)",
+		"Alias":"cit",
+		"Building":"Central Library Annexe"
+	},
+	{
+		"Title":"Centre for Instructional Technology (Computer Centre)",
+		"Alias":"cit",
+		"Building":"Computer Centre"
+	},
+	{
+		"Title":"Centre for Instructional Technology (House 11)",
+		"Alias":"cit",
+		"Building":"House 11"
+	},
+	{
+		"Title":"Centre for Integrated Circuit Failure Analysis and Reliability",
+		"Alias":"cicfar",
+		"Building":"E3"
+	},
+	{
+		"Title":"Centre for Intelligent Control",
+		"Alias":"cic",
+		"Building":"EA"
+	},
+	{
+		"Title":"Centre for Intelligent Products and Manufacturing Systems",
+		"Alias":"cipms",
+		"Building":"EA"
+	},
+	{
+		"Title":"Centre for International Law (CIL)",
+		"Alias":"cil",
+		"Building":"Block B, BTC"
+	},
+	{
+		"Title":"Centre for Ion Beam Applications",
+		"Alias":"ciba",
+		"Building":"S7"
+	},
+	{
+		"Title":"Centre for Language Studies",
+		"Alias":"cls",
+		"Type":"Faculty",
+		"Building":"AS4"
+	},
+	{
+		"Title":"Centre for Maritime Studies (CMS)",
+		"Alias":"cms",
+		"Building":"Centre for Maritime Studies"
+	},
+	{
+		"Title":"Centre for Microwave and Radio Frequency",
+		"Alias":"cmrf",
+		"Building":"E4"
+	},
+	{
+		"Title":"Centre for Molecular Epidemiology",
+		"Alias":"cme",
+		"Building":"MD3"
+	},
+	{
+		"Title":"Centre for Offshore Research &amp; Engineering",
+		"Alias":"core",
+		"Building":"E1A"
+	},
+	{
+		"Title":"Centre for Optoelectronics",
+		"Alias":"co",
+		"Building":"E3"
+	},
+	{
+		"Title":"Centre for Power Electronics",
+		"Alias":"cpe",
+		"Building":"E3"
+	},
+	{
+		"Title":"Centre for Project Management &amp; Construction Law",
+		"Alias":"cpmcl",
+		"Building":"SDE2"
+	},
+	{
+		"Title":"Centre for Quantum Technologies",
+		"Alias":"cqt",
+		"Building":"S15"
+	},
+	{
+		"Title":"Centre for Real Estate Studies",
+		"Alias":"cres",
+		"Building":"SDE1"
+	},
+	{
+		"Title":"Centre for Remote Imaging, Sensing and Processing (CRISP)",
+		"Alias":"crisp",
+		"Building":"S17"
+	},
+	{
+		"Title":"Centre for Soft-ground Engineering",
+		"Alias":"cse",
+		"Building":"E1"
+	},
+	{
+		"Title":"Centre for Superconducting and Magnetic Materials",
+		"Alias":"csmm",
+		"Building":"S12"
+	},
+	{
+		"Title":"Centre for Total Building Performance",
+		"Alias":"ctbp",
+		"Building":"SDE1"
+	},
+	{
+		"Title":"Centre for Transportation Research",
+		"Alias":"ctr",
+		"Building":"E1A"
+	},
+	{
+		"Title":"Centre for Wavelets Approximation &amp; Information Processing",
+		"Alias":"cwaip",
+		"Building":"S13"
+	},
+	{
+		"Title":"Chemical, Molecular and Materials Analysis Centre",
+		"Alias":"cmmac",
+		"Building":"S8"
+	},
+	{
+		"Title":"Citibank ATM (Blk ADM, 4th floor, Walkway linking AS1 and AS6)",
+		"Building":"Block ADM"
+	},
+	{
+		"Title":"Cheers Convenience Store",
+		"Building":"Cheers Convenience Store"
+	},
+	{
+		"Title":"Clinic for Human Reproduction",
+		"Alias":"chr",
+		"Building":"NUH"
+	},
+	{
+		"Title":"Coffee Club Express",
+		"Building":"Coffee Club Express"
+	},
+	{
+		"Title":"Coffee Grounds",
+		"Building":"Coffee Grounds"
+	},
+	{
+		"Title":"COM1",
+		"Type":"Faculty",
+		"Building":"COM1"
+	},
+	{
+		"Title":"COM2",
+		"Type":"Faculty",
+		"Building":"COM2"
+	},
+	{
+		"Title":"Communications &amp; New Media Programme",
+		"Alias":"cnmp",
+		"Type":"Faculty",
+		"Building":"AS6"
+	},
+	{
+		"Title":"Computational Biology Research Lab",
+		"Alias":"cbrl",
+		"Type":"Faculty",
+		"Building":"COM1"
+	},
+	{
+		"Title":"Computational Linguistics Research Lab",
+		"Alias":"clrl",
+		"Type":"Faculty",
+		"Building":"AS6"
+	},
+	{
+		"Title":"Computer Centre",
+		"Alias":"cc",
+		"Type":"Admin",
+		"Building":"Computer Centre"
+	},
+	{
+		"Title":"Computer Vision Research Lab",
+		"Alias":"cvrl",
+		"Type":"Faculty",
+		"Building":"AS6"
+	},
+	{
+		"Title":"Data Storage Institute",
+		"Alias":"dsi",
+		"Building":"Data Storage Institute"
+	},
+	{
+		"Title":"Database Research Lab 1",
+		"Alias":"drl1",
+		"Type":"Faculty",
+		"Building":"COM1"
+	},
+	{
+		"Title":"Database Research Lab 2",
+		"Alias":"drl2",
+		"Type":"Faculty",
+		"Building":"COM1"
+	},
+	{
+		"Title":"DBS / POSBank ATMs (Yusof Ishak House)",
+		"Building":"Yusof Ishak House"
+	},
+	{
+		"Title":"DBS / POSBank ATMs (Block ADM)",
+		"Building":"Block ADM"
+	},
+	{
+		"Title":"DBS / POSBank ATMs (LT27)",
+		"Building":"Lecture Theatre 27"
+	},
+	{
+		"Title":"DBS / POSBank Cash Deposit Machine (Yusof Ishak House)",
+		"Building":"Yusof Ishak House"
+	},
+	{
+		"Title":"Dental Centre",
+		"Type":"Faculty",
+		"Building":"NUH"
+	},
+	{
+		"Title":"Department of Accounting",
+		"Alias":"accounting",
+		"Type":"Faculty",
+		"Building":"BIZ1"
+	},
+	{
+		"Title":"Department of Anaesthesia",
+		"Alias":"anaesthesia",
+		"Type":"Faculty",
+		"Building":"NUH"
+	},
+	{
+		"Title":"Department of Anatomy",
+		"Alias":"anatomy",
+		"Type":"Faculty",
+		"Building":"MD10"
+	},
+	{
+		"Title":"Department of Architecture",
+		"Alias":"architecture",
+		"Type":"Faculty",
+		"Building":"SDE1"
+	},
+	{
+		"Title":"Department of Biochemistry",
+		"Alias":"biochemistry",
+		"Type":"Faculty",
+		"Building":"MD7"
+	},
+	{
+		"Title":"Department of Biochemistry (Annexe)",
+		"Alias":"biochemistry",
+		"Type":"Faculty",
+		"Building":"MD4A"
+	},
+	{
+		"Title":"Department of Biological Sciences (S1)",
+		"Alias":"biological",
+		"Type":"Faculty",
+		"Building":"S1"
+	},
+	{
+		"Title":"Department of Biological Sciences (S1A)",
+		"Alias":"biological",
+		"Type":"Faculty",
+		"Building":"S1A"
+	},
+	{
+		"Title":"Department of Biological Sciences (S2)",
+		"Alias":"biological",
+		"Type":"Faculty",
+		"Building":"S2"
+	},
+	{
+		"Title":"Department of Biological Sciences (S3)",
+		"Alias":"biological",
+		"Type":"Faculty",
+		"Building":"S3"
+	},
+	{
+		"Title":"Department of Building",
+		"Alias":"building",
+		"Type":"Faculty",
+		"Building":"SDE1"
+	},
+	{
+		"Title":"Department of Chemical &amp; Biomolecular Engineering",
+		"Alias":"chemical biomolecular",
+		"Type":"Faculty",
+		"Building":"E5"
+	},
+	{
+		"Title":"Department of Chemistry (S3)",
+		"Alias":"chemistry",
+		"Type":"Faculty",
+		"Building":"S3"
+	},
+	{
+		"Title":"Department of Chemistry (S5)",
+		"Alias":"chemistry",
+		"Type":"Faculty",
+		"Building":"S5"
+	},
+	{
+		"Title":"Department of Chemistry (S7)",
+		"Alias":"chemistry",
+		"Type":"Faculty",
+		"Building":"S7"
+	},
+	{
+		"Title":"Department of Chemistry (S8)",
+		"Alias":"chemistry",
+		"Type":"Faculty",
+		"Building":"S8"
+	},
+	{
+		"Title":"Department of Chemistry (S9)",
+		"Alias":"chemistry",
+		"Type":"Faculty",
+		"Building":"S9"
+	},
+	{
+		"Title":"Department of Chinese Studies",
+		"Alias":"chinese studies",
+		"Type":"Faculty",
+		"Building":"AS7"
+	},
+	{
+		"Title":"Department of Civil Engineering",
+		"Alias":"civil engineering",
+		"Type":"Faculty",
+		"Building":"E1A"
+	},
+	{
+		"Title":"Department of Computer Science",
+		"Alias":"cs",
+		"Type":"Faculty",
+		"Building":"COM1"
+	},
+	{
+		"Title":"Department of Decision Sciences",
+		"Alias":"ds",
+		"Type":"Faculty",
+		"Building":"BIZ1"
+	},
+	{
+		"Title":"Department of Diagnostic Radiology",
+		"Alias":"diagnostic radiology",
+		"Type":"Faculty",
+		"Building":"NUH"
+	},
+	{
+		"Title":"Department of Economics",
+		"Alias":"economics",
+		"Type":"Faculty",
+		"Building":"AS2"
+	},
+	{
+		"Title":"Department of Electrical &amp; Computer Engineering",
+		"Alias":"ece",
+		"Type":"Faculty",
+		"Building":"E4"
+	},
+	{
+		"Title":"Department of English Language &amp; Literature",
+		"Alias":"ell",
+		"Type":"Faculty",
+		"Building":"AS5"
+	},
+	{
+		"Title":"Department of Epidemiology &amp; Public Health",
+		"Alias":"eph",
+		"Type":"Faculty",
+		"Building":"MD3"
+	},
+	{
+		"Title":"Department of Finance",
+		"Alias":"finance",
+		"Type":"Faculty",
+		"Building":"BIZ1"
+	},
+	{
+		"Title":"Department of Geography",
+		"Alias":"geography",
+		"Type":"Faculty",
+		"Building":"AS2"
+	},
+	{
+		"Title":"Department of History",
+		"Alias":"history",
+		"Type":"Faculty",
+		"Building":"AS1"
+	},
+	{
+		"Title":"Department of Industrial &amp; Systems Engineering",
+		"Alias":"ise",
+		"Type":"Faculty",
+		"Building":"E1A"
+	},
+	{
+		"Title":"Department of Information Systems",
+		"Alias":"is",
+		"Type":"Faculty",
+		"Building":"COM2"
+	},
+	{
+		"Title":"Department of Japanese Studies",
+		"Alias":"japanese studies",
+		"Type":"Faculty",
+		"Building":"AS4"
+	},
+	{
+		"Title":"Department of Malay Studies",
+		"Alias":"malay studies",
+		"Type":"Faculty",
+		"Building":"AS7"
+	},
+	{
+		"Title":"Department of Management &amp; Organisation",
+		"Alias":"management organisation",
+		"Type":"Faculty",
+		"Building":"BIZ1"
+	},
+	{
+		"Title":"Department of Marketing",
+		"Alias":"marketing",
+		"Type":"Faculty",
+		"Building":"BIZ1"
+	},
+	{
+		"Title":"Department of Materials Science &amp; Engineering",
+		"Alias":"mse",
+		"Type":"Faculty",
+		"Building":"E3A"
+	},
+	{
+		"Title":"Department of Mathematics (S14)",
+		"Alias":"mathematics",
+		"Type":"Faculty",
+		"Building":"S14"
+	},
+	{
+		"Title":"Department of Mathematics (S17)",
+		"Alias":"mathematics",
+		"Type":"Faculty",
+		"Building":"S17"
+	},
+	{
+		"Title":"Department of Mechanical Engineering",
+		"Alias":"me",
+		"Type":"Faculty",
+		"Building":"EA"
+	},
+	{
+		"Title":"Department of Medicine",
+		"Alias":"medicine",
+		"Type":"Faculty",
+		"Building":"NUH"
+	},
+	{
+		"Title":"Department of Microbiology",
+		"Alias":"microbiology",
+		"Type":"Faculty",
+		"Building":"MD4"
+	},
+	{
+		"Title":"Department of Obstetrics &amp; Gynaecology",
+		"Alias":"obstetrics gynaecology",
+		"Type":"Faculty",
+		"Building":"NUH"
+	},
+	{
+		"Title":"Department of Ophthalmology",
+		"Alias":"ophthalmology",
+		"Type":"Faculty",
+		"Building":"NUH"
+	},
+	{
+		"Title":"Department of Oral &amp; Maxillofacial Surgery",
+		"Alias":"oral maxillofacial surgery",
+		"Type":"Faculty",
+		"Building":"Faculty of Dentistry"
+	},
+	{
+		"Title":"Department of Orthopaedic Surgery",
+		"Alias":"orthopaedic surgery",
+		"Type":"Faculty",
+		"Building":"NUH"
+	},
+	{
+		"Title":"Department of Otolaryngology",
+		"Alias":"otolaryngology",
+		"Type":"Faculty",
+		"Building":"NUH"
+	},
+	{
+		"Title":"Department of Paediatrics",
+		"Alias":"paediatrics",
+		"Type":"Faculty",
+		"Building":"NUH"
+	},
+	{
+		"Title":"Department of Pathology",
+		"Alias":"pathology",
+		"Type":"Faculty",
+		"Building":"NUH"
+	},
+	{
+		"Title":"Department of Pharmacology",
+		"Alias":"pharmacology",
+		"Type":"Faculty",
+		"Building":"MD11"
+	},
+	{
+		"Title":"Department of Pharmacy (S3)",
+		"Alias":"pharmacy",
+		"Type":"Faculty",
+		"Building":"S3"
+	},
+	{
+		"Title":"Department of Pharmacy (S4)",
+		"Alias":"pharmacy",
+		"Type":"Faculty",
+		"Building":"S4"
+	},
+	{
+		"Title":"Department of Pharmacy (Annexe)",
+		"Alias":"pharmacy",
+		"Type":"Faculty",
+		"Building":"S4A"
+	},
+	{
+		"Title":"Department of Philosophy",
+		"Alias":"philosophy",
+		"Type":"Faculty",
+		"Building":"AS3"
+	},
+	{
+		"Title":"Department of Physics (S1A)",
+		"Alias":"physics",
+		"Type":"Faculty",
+		"Building":"S1A"
+	},
+	{
+		"Title":"Department of Physics (S7)",
+		"Alias":"physics",
+		"Type":"Faculty",
+		"Building":"S7"
+	},
+	{
+		"Title":"Department of Physics (S11)",
+		"Alias":"physics",
+		"Type":"Faculty",
+		"Building":"S11"
+	},
+	{
+		"Title":"Department of Physics (S12)",
+		"Alias":"physics",
+		"Type":"Faculty",
+		"Building":"S11"
+	},
+	{
+		"Title":"Department of Physics (S13)",
+		"Alias":"physics",
+		"Type":"Faculty",
+		"Building":"S13"
+	},
+	{
+		"Title":"Department of Physiology",
+		"Alias":"physiology",
+		"Type":"Faculty",
+		"Building":"MD9"
+	},
+	{
+		"Title":"Department of Political Science",
+		"Alias":"political science",
+		"Type":"Faculty",
+		"Building":"AS1"
+	},
+	{
+		"Title":"Department of Preventive Dentistry",
+		"Alias":"preventive dentistry",
+		"Type":"Faculty",
+		"Building":"Faculty of Dentistry"
+	},
+	{
+		"Title":"Department of Psychological Medicine",
+		"Alias":"psychological medicine",
+		"Type":"Faculty",
+		"Building":"NUH"
+	},
+	{
+		"Title":"Department of Psychology",
+		"Alias":"psychology",
+		"Type":"Faculty",
+		"Building":"AS4"
+	},
+	{
+		"Title":"Department of Real Estate",
+		"Alias":"real estate",
+		"Type":"Faculty",
+		"Building":"SDE1"
+	},
+	{
+		"Title":"Department of Restorative Dentistry",
+		"Alias":"restorative dentistry",
+		"Type":"Faculty",
+		"Building":"Faculty of Dentistry"
+	},
+	{
+		"Title":"Department of Social Work",
+		"Alias":"social work",
+		"Type":"Faculty",
+		"Building":"AS3"
+	},
+	{
+		"Title":"Department of Sociology",
+		"Alias":"sociology",
+		"Type":"Faculty",
+		"Building":"AS1"
+	},
+	{
+		"Title":"Department of Statistics &amp; Applied Probability",
+		"Alias":"statistics applied probability",
+		"Type":"Faculty",
+		"Building":"S16"
+	},
+	{
+		"Title":"Department of Strategy &amp; Policy",
+		"Alias":"strategy policy",
+		"Type":"Faculty",
+		"Building":"BIZ1"
+	},
+	{
+		"Title":"Department of Surgery",
+		"Alias":"surgery",
+		"Type":"Faculty",
+		"Building":"NUH"
+	},
+	{
+		"Title":"Design Incubation Centre",
+		"Alias":"dic",
+		"Type":"Faculty",
+		"Building":"SDE2"
+	},
+	{
+		"Title":"Development Office",
+		"Type":"Admin",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Development Office (House 15)",
+		"Type":"Admin",
+		"Building":"House 15"
+	},
+	{
+		"Title":"Dilys Creation (Engineering)",
+		"Building":"Dilys Creation (Engineering)"
+	},
+	{
+		"Title":"Dilys Creation (Science)",
+		"Building":"Dilys Creation (Science)"
+	},
+	{
+		"Title":"Division of Bioengineering",
+		"Alias":"bioengineering",
+		"Type":"Faculty",
+		"Building":"E3A"
+	},
+	{
+		"Title":"Division of Graduate Dental Studies",
+		"Alias":"graduate dental studies",
+		"Type":"Faculty",
+		"Building":"Faculty of Dentistry"
+	},
+	{
+		"Title":"Division of Graduate Medical Studies",
+		"Alias":"graduate medical studies",
+		"Type":"Faculty",
+		"Building":"MD5"
+	},
+	{
+		"Title":"Division of Graduate Studies (School of Computing)",
+		"Alias":"graduate studies",
+		"Type":"Faculty",
+		"Building":"COM1"
+	},
+	{
+		"Title":"Division of Research &amp; Graduate Studies (Faculty of Arts &amp; Social Sciences)",
+		"Alias":"research graduate studies",
+		"Type":"Faculty",
+		"Building":"AS7"
+	},
+	{
+		"Title":"Division of Research &amp; Graduate Studies (Faculty of Sciences)",
+		"Alias":"research graduate studies",
+		"Type":"Faculty",
+		"Building":"S16"
+	},
+	{
+		"Title":"Division of Research &amp; Graduate Studies (NUS Business School)",
+		"Alias":"research graduate studies",
+		"Type":"Faculty",
+		"Building":"BIZ1"
+	},
+	{
+		"Title":"Division of Research (School of Computing)",
+		"Type":"Faculty",
+		"Building":"COM1"
+	},
+	{
+		"Title":"Division of Research &amp; Graduate Studies (School of Design &amp; Environment)",
+		"Alias":"research graduate studies",
+		"Type":"Faculty",
+		"Building":"SDE1"
+	},
+	{
+		"Title":"Division of Engineering Technology Management",
+		"Alias":"etm",
+		"Type":"Faculty",
+		"Building":"E3A"
+	},
+	{
+		"Title":"Division of Environmental Science &amp; Engineering",
+		"Alias":"ese",
+		"Type":"Faculty",
+		"Building":"EA"
+	},
+	{
+		"Title":"Duke-NUS Graduate Medical School",
+		"Building":"Duke-NUS Graduate Medical School"
+	},
+	{
+		"Title":"E1",
+		"Type":"Faculty",
+		"Building":"E1"
+	},
+	{
+		"Title":"E1A",
+		"Type":"Faculty",
+		"Building":"E1A"
+	},
+	{
+		"Title":"E2",
+		"Type":"Faculty",
+		"Building":"E2"
+	},
+	{
+		"Title":"E3",
+		"Type":"Faculty",
+		"Building":"E3"
+	},
+	{
+		"Title":"E3A",
+		"Type":"Faculty",
+		"Building":"E3A"
+	},
+	{
+		"Title":"E4",
+		"Type":"Faculty",
+		"Building":"E4"
+	},
+	{
+		"Title":"E4A",
+		"Type":"Faculty",
+		"Building":"E4A"
+	},
+	{
+		"Title":"E5",
+		"Type":"Faculty",
+		"Building":"E5"
+	},
+	{
+		"Title":"EA",
+		"Type":"Faculty",
+		"Building":"EA"
+	},
+	{
+		"Title":"East Asian Institute (EAI)",
+		"Alias":"eai",
+		"Building":"Tower Block, BTC"
+	},
+	{
+		"Title":"Electron Microscopy Unit",
+		"Alias":"emu",
+		"Building":"MD5"
+	},
+	{
+		"Title":"Electronic Commerce &amp; Database Research Lab",
+		"Alias":"ecdrl",
+		"Type":"Faculty",
+		"Building":"COM1"
+	},
+	{
+		"Title":"Embedded Systems Research Lab 1",
+		"Alias":"esrl1",
+		"Type":"Faculty",
+		"Building":"COM1"
+	},
+	{
+		"Title":"Embedded Systems Research Lab 2",
+		"Alias":"esrl2",
+		"Type":"Faculty",
+		"Building":"COM1"
+	},
+	{
+		"Title":"Energy Studies Institute (ESI)",
+		"Alias":"esi",
+		"Building":"Blk A, 29 Heng Mui Keng Terrace"
+	},
+	{
+		"Title":"Energy Sustainability Unit",
+		"Alias":"esu",
+		"Building":"SDE1"
+	},
+	{
+		"Title":"Engineering IT Unit",
+		"Building":"E1"
+	},
+	{
+		"Title":"Engineering Science Programme",
+		"Type":"Faculty",
+		"Building":"E3A"
+	},
+	{
+		"Title":"Eusoff Hall",
+		"Alias":"eh",
+		"Type":"Residence",
+		"Building":"Eusoff Hall"
+	},
+	{
+		"Title":"EW1",
+		"Type":"Faculty",
+		"Building":"EW1"
+	},
+	{
+		"Title":"EW2",
+		"Type":"Faculty",
+		"Building":"EW2"
+	},
+	{
+		"Title":"Ez-Online Station (The Deck, Level 2)",
+		"Alias":"ezlink",
+		"Building":"The Deck"
+	},
+	{
+		"Title":"Faculty of Arts Social Sciences (Dean&apos;s Office)",
+		"Type":"Faculty",
+		"Building":"AS7"
+	},
+	{
+		"Title":"Faculty of Dentistry (Dean&apos;s Office)",
+		"Alias":"dentistry",
+		"Type":"Faculty",
+		"Building":"Faculty of Dentistry"
+	},
+	{
+		"Title":"Faculty of Engineering (Dean&apos;s Office)",
+		"Alias":"engineering",
+		"Type":"Faculty",
+		"Building":"EA"
+	},
+	{
+		"Title":"Faculty of Law (Federal)",
+		"Alias":"law",
+		"Type":"Faculty",
+		"Building":"Federal, BTC"
+	},
+	{
+		"Title":"Faculty of Law (Block B)",
+		"Alias":"law",
+		"Type":"Faculty",
+		"Building":"Block B, BTC"
+	},
+	{
+		"Title":"Faculty of Law (Eu Tong Sen)",
+		"Alias":"law",
+		"Type":"Faculty",
+		"Building":"Eu Tong Sen, BTC"
+	},
+	{
+		"Title":"Faculty of Science (Dean&apos;s Office)",
+		"Alias":"science",
+		"Type":"Faculty",
+		"Building":"S16"
+	},
+	{
+		"Title":"Frontier Canteen",
+		"Alias":"science canteen",
+		"Type":"Canteen",
+		"Building":"Frontier"
+	},
+	{
+		"Title":"G^3 Lab",
+		"Alias":"g3 lab",
+		"Type":"Faculty",
+		"Building":"AS6"
+	},
+	{
+		"Title":"GEA-NUS Pharmaceutical Processing Research Laboratory",
+		"Alias":"gpprl",
+		"Building":"S4"
+	},
+	{
+		"Title":"Global Asia Institute (GAI)",
+		"Alias":"gai",
+		"Building":"Oei Tiong Ham, BTC"
+	},
+	{
+		"Title":"Graduate Studies Office (Faculty of Engineering)",
+		"Type":"Faculty",
+		"Building":"EA"
+	},
+	{
+		"Title":"Great Wall Restaurant",
+		"Building":"Great Wall Restaurant"
+	},
+	{
+		"Title":"Health Wellness &amp; Counselling Centre",
+		"Alias":"hwcc",
+		"Building":"University Health Centre"
+	},
+	{
+		"Title":"Human Resource Management Unit (NUS Business School)",
+		"Alias":"humu",
+		"Type":"Faculty",
+		"Building":"BIZ1"
+	},
+	{
+		"Title":"Incubation Centre (Faculty of Engineering)",
+		"Type":"Faculty",
+		"Building":"E4"
+	},
+	{
+		"Title":"Incubation Centre (School of Computing)",
+		"Type":"Faculty",
+		"Building":"I3"
+	},
+	{
+		"Title":"Industry Research Lab",
+		"Alias":"irl",
+		"Type":"Faculty",
+		"Building":"AS6"
+	},
+	{
+		"Title":"Information Resource Centre (School of Design &amp; Environment)",
+		"Alias":"irc",
+		"Type":"Faculty",
+		"Building":"SDE1"
+	},
+	{
+		"Title":"Information Storage Materials Laboratory",
+		"Alias":"isml",
+		"Building":"EW2"
+	},
+	{
+		"Title":"Information Technology Unit (School of Computing)",
+		"Alias":"itu",
+		"Type":"Admin",
+		"Building":"COM2"
+	},
+	{
+		"Title":"International Relations Office",
+		"Alias":"iro",
+		"Type":"Admin",
+		"Building":"Shaw Foundation Alumni House"
+	},
+	{
+		"Title":"Investment Office",
+		"Alias":"io",
+		"Type":"Admin",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Institute of Materials Research &amp; Engineering",
+		"Alias":"imre",
+		"Building":"Institute of Materials Research &amp; Engineering"
+	},
+	{
+		"Title":"Institute of Mathematical Sciences (House 3)",
+		"Alias":"ims",
+		"Building":"House 3"
+	},
+	{
+		"Title":"Institute of Mathematical Sciences (House 4)",
+		"Alias":"ims",
+		"Building":"House 4"
+	},
+	{
+		"Title":"Institute of Policy Studies",
+		"Alias":"ips",
+		"Building":"House 5, BTC"
+	},
+	{
+		"Title":"Institute of Real Estate Studies (IRES)",
+		"Alias":"ires",
+		"Building":"I3"
+	},
+	{
+		"Title":"Institute of South Asian Studies (ISAS)",
+		"Alias":"isas",
+		"Building":"Tower Block, BTC"
+	},
+	{
+		"Title":"Institute of Systems Science (ISS)",
+		"Alias":"iss",
+		"Building":"Institute of Systems Science"
+	},
+	{
+		"Title":"Interactive and Digital Media Institute (IDMI)",
+		"Alias":"idmi",
+		"Building":"I3"
+	},
+	{
+		"Title":"IT Coop - Architecture &amp; Engineering Branch",
+		"Building":"SDE1"
+	},
+	{
+		"Title":"IT Coop - Science &amp; Medicine Branch",
+		"Building":"Lecture Theatre 27"
+	},
+	{
+		"Title":"IT Coop - Forum Branch",
+		"Building":"Central Library"
+	},
+	{
+		"Title":"IT Coop @ YIH",
+		"Building":"Yusof Ishak House"
+	},
+	{
+		"Title":"IT Coop @ LT-26",
+		"Building":"Lecture Theatre 26"
+	},
+	{
+		"Title":"Kent Ridge Guild House",
+		"Alias":"krgh",
+		"Building":"Kent Ridge Guild House"
+	},
+	{
+		"Title":"Kent Ridge Hall",
+		"Alias":"krh",
+		"Type":"Residence",
+		"Building":"Kent Ridge Hall"
+	},
+	{
+		"Title":"Kuok Foundation House",
+		"Alias":"kfh",
+		"Type":"Residence",
+		"Building":"Kuok Foundation House"
+	},
+	{
+		"Title":"Lab for Media Search",
+		"Alias":"lms",
+		"Type":"Faculty",
+		"Building":"AS6"
+	},
+	{
+		"Title":"Lecture Theatre 1",
+		"Alias":"lt1",
+		"Type":"LT",
+		"Building":"Lecture Theatre 1"
+	},
+	{
+		"Title":"Lecture Theatre 2",
+		"Alias":"lt2",
+		"Type":"LT",
+		"Building":"Lecture Theatre 2"
+	},
+	{
+		"Title":"Lecture Theatre 3",
+		"Alias":"lt3",
+		"Type":"LT",
+		"Building":"Lecture Theatre 3"
+	},
+	{
+		"Title":"Lecture Theatre 4",
+		"Alias":"lt4",
+		"Type":"LT",
+		"Building":"Lecture Theatre 4"
+	},
+	{
+		"Title":"Lecture Theatre 5",
+		"Alias":"lt5",
+		"Type":"LT",
+		"Building":"Lecture Theatre 5"
+	},
+	{
+		"Title":"Lecture Theatre 6",
+		"Alias":"lt6",
+		"Type":"LT",
+		"Building":"Lecture Theatre 6"
+	},
+	{
+		"Title":"Lecture Theatre 7",
+		"Alias":"lt7",
+		"Type":"LT",
+		"Building":"Lecture Theatre 7"
+	},
+	{
+		"Title":"Lecture Theatre 7A",
+		"Alias":"lt7a",
+		"Type":"LT",
+		"Building":"Lecture Theatre 7A"
+	},
+	{
+		"Title":"Lecture Theatre 8",
+		"Alias":"lt8",
+		"Type":"LT",
+		"Building":"Lecture Theatre 8"
+	},
+	{
+		"Title":"Lecture Theatre 9",
+		"Alias":"lt9",
+		"Type":"LT",
+		"Building":"Lecture Theatre 9"
+	},
+	{
+		"Title":"Lecture Theatre 10",
+		"Alias":"lt10",
+		"Type":"LT",
+		"Building":"Lecture Theatre 10"
+	},
+	{
+		"Title":"Lecture Theatre 11",
+		"Alias":"lt11",
+		"Type":"LT",
+		"Building":"Lecture Theatre 11"
+	},
+	{
+		"Title":"Lecture Theatre 12",
+		"Alias":"lt12",
+		"Type":"LT",
+		"Building":"Lecture Theatre 12"
+	},
+	{
+		"Title":"Lecture Theatre 13",
+		"Alias":"lt13",
+		"Type":"LT",
+		"Building":"Lecture Theatre 13"
+	},
+	{
+		"Title":"Lecture Theatre 14",
+		"Alias":"lt14",
+		"Type":"LT",
+		"Building":"Lecture Theatre 14"
+	},
+	{
+		"Title":"Lecture Theatre 15",
+		"Alias":"lt15",
+		"Type":"LT",
+		"Building":"Lecture Theatre 15"
+	},
+	{
+		"Title":"Lecture Theatre 16",
+		"Alias":"lt16",
+		"Type":"LT",
+		"Building":"Lecture Theatre 16"
+	},
+	{
+		"Title":"Lecture Theatre 17",
+		"Alias":"lt17",
+		"Type":"LT",
+		"Building":"Lecture Theatre 17"
+	},
+	{
+		"Title":"Lecture Theatre 18",
+		"Alias":"lt18",
+		"Type":"LT",
+		"Building":"Lecture Theatre 18"
+	},
+	{
+		"Title":"Lecture Theatre 19",
+		"Alias":"lt19",
+		"Type":"LT",
+		"Building":"Lecture Theatre 19"
+	},
+	{
+		"Title":"Lecture Theatre 20",
+		"Alias":"lt20",
+		"Type":"LT",
+		"Building":"Lecture Theatre 20"
+	},
+	{
+		"Title":"Lecture Theatre 21",
+		"Alias":"lt21",
+		"Type":"LT",
+		"Building":"Lecture Theatre 21"
+	},
+	{
+		"Title":"Lecture Theatre 22",
+		"Alias":"lt22",
+		"Type":"LT",
+		"Building":"Lecture Theatre 22"
+	},
+	{
+		"Title":"Lecture Theatre 23",
+		"Alias":"lt23",
+		"Type":"LT",
+		"Building":"Lecture Theatre 23"
+	},
+	{
+		"Title":"Lecture Theatre 24",
+		"Alias":"lt24",
+		"Type":"LT",
+		"Building":"Lecture Theatre 24"
+	},
+	{
+		"Title":"Lecture Theatre 25",
+		"Alias":"lt25",
+		"Type":"LT",
+		"Building":"Lecture Theatre 25"
+	},
+	{
+		"Title":"Lecture Theatre 26",
+		"Alias":"lt26",
+		"Type":"LT",
+		"Building":"Lecture Theatre 26"
+	},
+	{
+		"Title":"Lecture Theatre 27",
+		"Alias":"lt27",
+		"Type":"LT",
+		"Building":"Lecture Theatre 27"
+	},
+	{
+		"Title":"Lecture Theatre 28",
+		"Alias":"lt28",
+		"Type":"LT",
+		"Building":"Lecture Theatre 28"
+	},
+	{
+		"Title":"Lecture Theatre 29",
+		"Alias":"lt29",
+		"Type":"LT",
+		"Building":"Lecture Theatre 29"
+	},
+	{
+		"Title":"Lecture Theatre 31",
+		"Alias":"lt31",
+		"Type":"LT",
+		"Building":"Lecture Theatre 31"
+	},
+	{
+		"Title":"Lecture Theatre 32",
+		"Alias":"lt32",
+		"Type":"LT",
+		"Building":"Lecture Theatre 32"
+	},
+	{
+		"Title":"Lecture Theatre 33",
+		"Alias":"lt33",
+		"Type":"LT",
+		"Building":"Lecture Theatre 33"
+	},
+	{
+		"Title":"Lecture Theatre 34",
+		"Alias":"lt34",
+		"Type":"LT",
+		"Building":"Lecture Theatre 34"
+	},
+	{
+		"Title":"Lee Kong Chian Art Museum",
+		"Alias":"lkcam",
+		"Building":"Museum"
+	},
+	{
+		"Title":"Lee Kuan Yew School of Public Policy (Li Ka Shing)",
+		"Alias":"public policy",
+		"Type":"Faculty",
+		"Building":"Li Ka Shing, BTC"
+	},
+	{
+		"Title":"Lee Kuan Yew School of Public Policy (Manasseh Meyer)",
+		"Alias":"public policy",
+		"Type":"Faculty",
+		"Building":"Manasseh Meyer, BTC"
+	},
+	{
+		"Title":"Lee Kuan Yew School of Public Policy (Oei Tiong Ham)",
+		"Alias":"public policy",
+		"Type":"Faculty",
+		"Building":"Oei Tiong Ham, BTC"
+	},
+	{
+		"Title":"Lerk Thai Bistro",
+		"Building":"The Deck"
+	},
+	{
+		"Title":"Life Sciences Institute (LSI)",
+		"Alias":"lsi",
+		"Building":"Centre for Life Sciences"
+	},
+	{
+		"Title":"Maternal &amp; Child Health/Family Planning Services, Research &amp; Training",
+		"Alias":"mchfpsrt",
+		"Building":"NUH"
+	},
+	{
+		"Title":"McDonald's",
+		"Building":"McDonald's"
+	},
+	{
+		"Title":"MD1",
+		"Type":"Faculty",
+		"Building":"MD1"
+	},
+	{
+		"Title":"MD2",
+		"Type":"Faculty",
+		"Building":"MD2"
+	},
+	{
+		"Title":"MD3",
+		"Type":"Faculty",
+		"Building":"MD3"
+	},
+	{
+		"Title":"MD4",
+		"Type":"Faculty",
+		"Building":"MD4"
+	},
+	{
+		"Title":"MD4A",
+		"Type":"Faculty",
+		"Building":"MD4A"
+	},
+	{
+		"Title":"MD5",
+		"Type":"Faculty",
+		"Building":"MD5"
+	},
+	{
+		"Title":"MD7",
+		"Type":"Faculty",
+		"Building":"MD7"
+	},
+	{
+		"Title":"MD9",
+		"Type":"Faculty",
+		"Building":"MD9"
+	},
+	{
+		"Title":"MD10",
+		"Type":"Faculty",
+		"Building":"MD10"
+	},
+	{
+		"Title":"MD11",
+		"Type":"Faculty",
+		"Building":"MD11"
+	},
+	{
+		"Title":"Mechatronics Programme",
+		"Building":"EA"
+	},
+	{
+		"Title":"Medical Computing Research Lab",
+		"Alias":"mcrl",
+		"Type":"Faculty",
+		"Building":"COM1"
+	},
+	{
+		"Title":"Megabites Cafe",
+		"Building":"Megabites Cafe"
+	},
+	{
+		"Title":"Middle East Institute (MEI)",
+		"Alias":"mei",
+		"Building":"Tower Block, BTC"
+	},
+	{
+		"Title":"Minimally-Invasive Surgical Centre",
+		"Alias":"misc",
+		"Building":"NUH"
+	},
+	{
+		"Title":"Multimedia Analysis and Synthesis Lab",
+		"Alias":"masl",
+		"Type":"Faculty",
+		"Building":"AS6"
+	},
+	{
+		"Title":"Multimedia Systems Lab",
+		"Alias":"msl",
+		"Type":"Faculty",
+		"Building":"AS6"
+	},
+	{
+		"Title":"Munchie Monkey",
+		"Building":"Munchie Monkey"
+	},
+	{
+		"Title":"National Malaria Reference Centre",
+		"Alias":"nmrc",
+		"Building":"MD4A"
+	},
+	{
+		"Title":"National University Medical Institutes",
+		"Alias":"numi",
+		"Building":"MD11"
+	},
+	{
+		"Title":"Ng Eng Teng Gallery",
+		"Alias":"netg",
+		"Building":"Museum"
+	},
+	{
+		"Title":"NUS Centre For the Arts",
+		"Alias":"cfa",
+		"Building":"University Cultural Centre"
+	},
+	{
+		"Title":"NUS Enterprise",
+		"Alias":"enterprise",
+		"Building":"I3"
+	},
+	{
+		"Title":"NUS Entrepreneurship Centre",
+		"Alias":"entrepreneurship centre",
+		"Building":"I3"
+	},
+	{
+		"Title":"NUS Environmental Research Institute (NERI)",
+		"Alias":"neri",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"National Hepatitis Quality Assurance Centre",
+		"Alias":"nhqac",
+		"Building":"MD4A"
+	},
+	{
+		"Title":"NUS Industry Liaison Office",
+		"Alias":"ilo",
+		"Building":"I3"
+	},
+	{
+		"Title":"NUS Nanoscience and Nanotechnology Initiative (E3)",
+		"Alias":"nusnni",
+		"Building":"E3"
+	},
+	{
+		"Title":"NUS Nanoscience and Nanotechnology Initiative (S13)",
+		"Alias":"nusnni",
+		"Building":"S13"
+	},
+	{
+		"Title":"NUS Overseas Colleges",
+		"Alias":"overseas colleges",
+		"Building":"I3"
+	},
+	{
+		"Title":"NUS Publishing",
+		"Alias":"publishing",
+		"Building":"AS3"
+	},
+	{
+		"Title":"NUS Society",
+		"Alias":"society",
+		"Building":"Kent Ridge Guild House"
+	},
+	{
+		"Title":"NUS Staff Club",
+		"Alias":"staff club",
+		"Building":"Staff Club"
+	},
+	{
+		"Title":"NUS Technology Holdings",
+		"Alias":"technology holdings",
+		"Building":"I3"
+	},
+	{
+		"Title":"NUS-Fudan Joint Graduate School",
+		"Alias":"fudan joint graduate school",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"NUS Graduate School for Integrative Sciences &amp; Engineering",
+		"Alias":"integrative sciences engineering",
+		"Building":"Centre for Life Sciences"
+	},
+	{
+		"Title":"NUSSU Secretariat (Students&apos; Union)",
+		"Alias":"secretariat",
+		"Building":"Yusof Ishak House"
+	},
+	{
+		"Title":"OCBC ATM (Near to LT9)",
+		"Building":"Lecture Theatre 9"
+	},
+	{
+		"Title":"Occupational Health",
+		"Alias":"oh",
+		"Building":"MD3"
+	},
+	{
+		"Title":"Office of Admissions",
+		"Alias":"oa",
+		"Type":"Admin",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Office of Alumni Relations",
+		"Alias":"oar",
+		"Type":"Admin",
+		"Building":"Shaw Foundation Alumni House"
+	},
+	{
+		"Title":"Office of Campus Security (House 17)",
+		"Alias":"ocs",
+		"Type":"Admin",
+		"Building":"House 17"
+	},
+	{
+		"Title":"Office of Campus Security (House 18)",
+		"Alias":"ocs",
+		"Type":"Admin",
+		"Building":"House 18"
+	},
+	{
+		"Title":"Office of Corporate Relations",
+		"Alias":"ocr",
+		"Type":"Admin",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Office of Estate &amp; Development",
+		"Alias":"oed",
+		"Type":"Admin",
+		"Building":"Office of Estate &amp; Development"
+	},
+	{
+		"Title":"Office of Environmental Sustainability",
+		"Alias":"oes",
+		"Type":"Admin",
+		"Building":"Office of Estate &amp; Development"
+	},
+	{
+		"Title":"Office of Financial Aid",
+		"Alias":"ofa",
+		"Type":"Admin",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Office of Financial Services",
+		"Alias":"ofs",
+		"Type":"Admin",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Office of Housing Services",
+		"Alias":"ohs",
+		"Type":"Admin",
+		"Building":"Block ADM"
+	},
+	{
+		"Title":"Office of Human Resources",
+		"Alias":"ohr",
+		"Type":"Admin",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Office of Internal Audit",
+		"Alias":"oia",
+		"Type":"Admin",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Office of Investment",
+		"Alias":"oi",
+		"Type":"Admin",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Office of Legal Affairs",
+		"Alias":"ola",
+		"Type":"Admin",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Office of Life Sciences",
+		"Alias":"ols",
+		"Building":"Centre for Life Sciences"
+	},
+	{
+		"Title":"Office of Programmes (Faculty of Arts &amp; Social Sciences)",
+		"Alias":"op",
+		"Type":"Admin",
+		"Building":"AS7"
+	},
+	{
+		"Title":"Office of Quality Management",
+		"Alias":"oqm",
+		"Type":"Admin",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Office of Research",
+		"Alias":"ols",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Office of Resource Planning",
+		"Alias":"orp",
+		"Type":"Admin",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Office of Risk Management",
+		"Alias":"orm",
+		"Type":"Admin",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Office of Safety, Health &amp; Environment",
+		"Alias":"oshe",
+		"Type":"Admin",
+		"Building":"University Health Centre"
+	},
+	{
+		"Title":"Office of Student Affairs",
+		"Alias":"osa",
+		"Type":"Admin",
+		"Building":"Yusof Ishak House"
+	},
+	{
+		"Title":"Office of the Deputy President (Administration)",
+		"Alias":"odp",
+		"Type":"Admin",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Office of the Deputy President (Research &amp; Technology)",
+		"Alias":"odp",
+		"Type":"Admin",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Office of the President",
+		"Alias":"op",
+		"Type":"Admin",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Office of the Provost",
+		"Alias":"op",
+		"Type":"Admin",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Office of the Vice President (Campus Infrastructure)",
+		"Alias":"ovp",
+		"Type":"Admin",
+		"Building":"Office of Estate &amp; Development"
+	},
+	{
+		"Title":"Office of the Vice President (University &amp; Global Relations)",
+		"Alias":"ovp",
+		"Type":"Admin",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Orthopaedic Diagnostic Centre",
+		"Alias":"odc",
+		"Building":"NUH"
+	},
+	{
+		"Title":"Para-clinical Laboratory",
+		"Alias":"pcl",
+		"Building":"MD3"
+	},
+	{
+		"Title":"Post Office",
+		"Building":"Post Office"
+	},
+	{
+		"Title":"Pre-clinical Laboratory",
+		"Alias":"pcl",
+		"Building":"MD3"
+	},
+	{
+		"Title":"Prince George&apos;s Park Residences",
+		"Alias":"pgpr",
+		"Type":"Residence",
+		"Building":"Prince George&apos;s Park Residences"
+	},
+	{
+		"Title":"Professional Activities Centre (Faculty of Engineering)",
+		"Alias":"pac",
+		"Building":"EA"
+	},
+	{
+		"Title":"Programming Languages &amp; Systems Research Lab 1",
+		"Alias":"plsrl1",
+		"Type":"Faculty",
+		"Building":"COM1"
+	},
+	{
+		"Title":"Protein and Proteomics Centre",
+		"Alias":"ppc",
+		"Building":"S3"
+	},
+	{
+		"Title":"Raffles Hall",
+		"Alias":"rh",
+		"Type":"Residence",
+		"Building":"Raffles Hall"
+	},
+	{
+		"Title":"Raffles Museum of Biodiversity Research",
+		"Alias":"biodiversity",
+		"Building":"S6"
+	},
+	{
+		"Title":"Registrar's Office",
+		"Alias":"ro",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Research &amp; Training in Immunology",
+		"Alias":"rti",
+		"Building":"MD4A"
+	},
+	{
+		"Title":"Research Centre of Excellence in Mechanobiology",
+		"Alias":"mechanobiology",
+		"Building":"T-Lab"
+	},
+	{
+		"Title":"Research in Human Reproduction",
+		"Alias":"rhr",
+		"Building":"NUH"
+	},
+	{
+		"Title":"Ridge View Residences",
+		"Alias":"rvr",
+		"Type":"Residence",
+		"Building":"Ridge View Residences"
+	},
+	{
+		"Title":"Ridge View Tower Block",
+		"Alias":"rvtb",
+		"Type":"Residence",
+		"Building":"Ridge View Tower Block"
+	},
+	{
+		"Title":"Risk Management Institute (RMI)",
+		"Alias":"rmi",
+		"Building":"I3"
+	},
+	{
+		"Title":"S1",
+		"Type":"Faculty",
+		"Building":"S1"
+	},
+	{
+		"Title":"S2",
+		"Type":"Faculty",
+		"Building":"S2"
+	},
+	{
+		"Title":"S3",
+		"Type":"Faculty",
+		"Building":"S3"
+	},
+	{
+		"Title":"S4",
+		"Type":"Faculty",
+		"Building":"S4"
+	},
+	{
+		"Title":"S4A",
+		"Type":"Faculty",
+		"Building":"S4A"
+	},
+	{
+		"Title":"S5",
+		"Type":"Faculty",
+		"Building":"S5"
+	},
+	{
+		"Title":"S6",
+		"Type":"Faculty",
+		"Building":"S6"
+	},
+	{
+		"Title":"S7",
+		"Type":"Faculty",
+		"Building":"S7"
+	},
+	{
+		"Title":"S8",
+		"Type":"Faculty",
+		"Building":"S8"
+	},
+	{
+		"Title":"S9",
+		"Type":"Faculty",
+		"Building":"S9"
+	},
+	{
+		"Title":"S9A",
+		"Type":"Faculty",
+		"Building":"S9A"
+	},
+	{
+		"Title":"S10",
+		"Type":"Faculty",
+		"Building":"S10"
+	},
+	{
+		"Title":"S11",
+		"Type":"Faculty",
+		"Building":"S11"
+	},
+	{
+		"Title":"S12",
+		"Type":"Faculty",
+		"Building":"S12"
+	},
+	{
+		"Title":"S13",
+		"Type":"Faculty",
+		"Building":"S13"
+	},
+	{
+		"Title":"S14",
+		"Type":"Faculty",
+		"Building":"S14"
+	},
+	{
+		"Title":"S15",
+		"Type":"Faculty",
+		"Building":"S15"
+	},
+	{
+		"Title":"S16",
+		"Type":"Faculty",
+		"Building":"S16"
+	},
+	{
+		"Title":"S17",
+		"Type":"Faculty",
+		"Building":"S17"
+	},
+	{
+		"Title":"Saw Centre for Financial Studies",
+		"Alias":"scqf",
+		"Building":"BIZ2"
+	},
+	{
+		"Title":"Saw Centre for Quantitative Finance",
+		"Alias":"scqf",
+		"Building":"BIZ2"
+	},
+	{
+		"Title":"School of Computing (Dean&apos;s Office)",
+		"Alias":"soc",
+		"Type":"Faculty",
+		"Building":"COM1"
+	},
+	{
+		"Title":"School of Design &amp; Environment (Dean&apos;s Office)",
+		"Alias":"sde",
+		"Type":"Faculty",
+		"Building":"SDE1"
+	},
+	{
+		"Title":"School of Medicine (Dean&apos;s Office)",
+		"Alias":"medicine",
+		"Type":"Faculty",
+		"Building":"MD11"
+	},
+	{
+		"Title":"SDE1",
+		"Type":"Faculty",
+		"Building":"SDE1"
+	},
+	{
+		"Title":"SDE2",
+		"Type":"Faculty",
+		"Building":"SDE2"
+	},
+	{
+		"Title":"SDE3",
+		"Type":"Faculty",
+		"Building":"SDE3"
+	},
+	{
+		"Title":"Security Post (Bio-Sciences Complex)",
+		"Building":"S16"
+	},
+	{
+		"Title":"Security Post (Blk ADM)",
+		"Building":"Block ADM"
+	},
+	{
+		"Title":"Security Post (E3A)",
+		"Building":"E3A"
+	},
+	{
+		"Title":"Security Post (Engineering Block)",
+		"Building":"E5"
+	},
+	{
+		"Title":"Security Post (Office of Estate and Development)",
+		"Building":"Office of Estate &amp; Development"
+	},
+	{
+		"Title":"Security Post (Prince George&apos;s Park)",
+		"Building":"House 18"
+	},
+	{
+		"Title":"Security Post (School of Business)",
+		"Building":"COM2"
+	},
+	{
+		"Title":"Security Post (University Hall)",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Sensors Lab",
+		"Alias":"sl",
+		"Type":"Faculty",
+		"Building":"AS6"
+	},
+	{
+		"Title":"Shaw Foundation Alumni House Office of Alumni Relations",
+		"Alias":"sfahoar",
+		"Building":"Shaw Foundation Alumni House"
+	},
+	{
+		"Title":"Sheares Hall",
+		"Alias":"sh",
+		"Type":"Residence",
+		"Building":"Sheares Hall"
+	},
+	{
+		"Title":"Singapore Centre for Applied and Policy Economics (SCAPE)",
+		"Alias":"scape",
+		"Building":"AS2"
+	},
+	{
+		"Title":"Singapore Institute for Clinical Sciences",
+		"Alias":"ics",
+		"Building":"Brenner Centre for Molecular Medicine"
+	},
+	{
+		"Title":"Singapore Synchrotron Light Source (SSLS)",
+		"Alias":"ssls",
+		"Building":"Singapore Synchrotron Light Source"
+	},
+	{
+		"Title":"Singapore-MIT Alliance",
+		"Alias":"sma",
+		"Building":"E4"
+	},
+	{
+		"Title":"Solar Energy Research Institute of Singapore (SERIS)",
+		"Alias":"seris",
+		"Building":"E3A"
+	},
+	{
+		"Title":"South &amp; Southeast Asian Art Gallery",
+		"Alias":"ssaag",
+		"Building":"Museum"
+	},
+	{
+		"Title":"South Asian Studies Programme",
+		"Alias":"sasp",
+		"Building":"AS7"
+	},
+	{
+		"Title":"Southeast Asian Studies Programme",
+		"Alias":"sasp",
+		"Building":"AS3"
+	},
+	{
+		"Title":"Spinelli",
+		"Building":"University Hall"
+	},
+	{
+		"Title":"Sports and Recreation Centre",
+		"Alias":"src",
+		"Building":"Sports and Recreation Centre"
+	},
+	{
+		"Title":"Student Service Centre",
+		"Alias":"ssc",
+		"Type":"Admin",
+		"Building":"Yusof Ishak House"
+	},
+	{
+		"Title":"Subway",
+		"Building":"Subway"
+	},
+	{
+		"Title":"Sun Asian Bistro",
+		"Building":"Sun Asian Bistro"
+	},
+	{
+		"Title":"Surface Science Laboratory",
+		"Alias":"ssl",
+		"Building":"S13"
+	},
+	{
+		"Title":"Techno Edge Canteen",
+		"Alias":"engineering canteen",
+		"Type":"Canteen",
+		"Building":"Techno Edge"
+	},
+	{
+		"Title":"Technopreneurship Incubation Programme",
+		"Alias":"tip",
+		"Building":"E3"
+	},
+	{
+		"Title":"Temasek Defence Systems Institute",
+		"Alias":"tdsi",
+		"Building":"E1"
+	},
+	{
+		"Title":"Temasek Hall",
+		"Alias":"th",
+		"Type":"Residence",
+		"Building":"Sheares Hall"
+	},
+	{
+		"Title":"Temasek Laboratories (TL@NUS)",
+		"Alias":"tl",
+		"Building":"T-Lab"
+	},
+	{
+		"Title":"Temasek Life Sciences Laboratory",
+		"Alias":"tlsl",
+		"Building":"Temasek Life Sciences Laboratory"
+	},
+	{
+		"Title":"The Deck Canteen",
+		"Alias":"arts canteen",
+		"Type":"Canteen",
+		"Building":"The Deck"
+	},
+	{
+		"Title":"The Grinning Gecko",
+		"Building":"The Grinning Gecko"
+	},
+	{
+		"Title":"The Olive Cove",
+		"Building":"The Olive Cove"
+	},
+	{
+		"Title":"The Pavilion Cafe",
+		"Building":"The Pavilion Cafe"
+	},
+	{
+		"Title":"The Terrace Canteen",
+		"Alias":"business canteen",
+		"Type":"Canteen",
+		"Building":"The Terrace"
+	},
+	{
+		"Title":"The Logistics Institute - Asia Pacific (TLI - Asia Pacific)",
+		"Alias":"tli",
+		"Building":"I3"
+	},
+	{
+		"Title":"Tropical Marine Science Institute (TMSI)",
+		"Alias":"tmsi",
+		"Building":"S2S"
+	},
+	{
+		"Title":"University Cultural Centre",
+		"Alias":"ucc",
+		"Building":"University Cultural Centre"
+	},
+	{
+		"Title":"University Health Centre",
+		"Alias":"uhc",
+		"Building":"University Health Centre"
+	},
+	{
+		"Title":"University Scholars Programme",
+		"Alias":"usp",
+		"Building":"Block ADM"
+	},
+	{
+		"Title":"UOB ATMs (S16, near Science Canteen)",
+		"Building":"S16"
+	},
+	{
+		"Title":"UOB ATMs (Block ADM)",
+		"Building":"Block ADM"
+	},
+	{
+		"Title":"Visitors&apos; Lodge",
+		"Alias":"vl",
+		"Building":"Visitors&apos; Lodge"
+	},
+	{
+		"Title":"WHO Collaborating Centres (Research in Human Reproduction)",
+		"Alias":"human reproduction",
+		"Building":"NUH"
+	},
+	{
+		"Title":"WHO Collaborating Centres (Maternal &amp; Child Health / Family Planning Services, Research &amp; Training)",
+		"Alias":"mchfps",
+		"Building":"NUH"
+	},
+	{
+		"Title":"WHO Collaborating Centres (Occupational Health)",
+		"Alias":"occupational health",
+		"Building":"MD3"
+	},
+	{
+		"Title":"WHO Collaborating Centres (Research &amp; Training in Immunology)",
+		"Alias":"immunology",
+		"Building":"MD4"
+	},
+	{
+		"Title":"Yong Siew Toh Conservatory of Music",
+		"Alias":"music",
+		"Building":"Conservatory of Music"
+	}
+	]
+}

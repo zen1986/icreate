@@ -157,5 +157,19 @@ public class DataBaseHelper extends SQLiteOpenHelper{
     public Cursor fetchAllBusstopNodes() {
     	return myDataBase.rawQuery("select * from busstop", null);
     }
-    
+    public Cursor fetchBusesForBusstop(int id) {
+    	return myDataBase.rawQuery("select * from bus_busstop where busstop_id = ?", new String[] {Integer.toString(id)});
+    }
+    public Cursor fetchRouteSeq(int bus_id, int buss_id) {
+    	return myDataBase.rawQuery("select * from busroute where bus_id=? and busstop_id=?", new String[] {Integer.toString(bus_id), Integer.toString(buss_id)});
+    }
+    public Cursor fetchBusstopBySeqAndBus(int seq, int bus_id) {
+    	return myDataBase.rawQuery("select * from busroute where seq=? and bus_id = ?", new String[] {Integer.toString(seq), Integer.toString(bus_id)});
+    }
+    public boolean isBusLoop(int id) {
+    	Cursor c = myDataBase.rawQuery("select * from bus where _id = ?", new String[]{Integer.toString(id)});
+    	if (!c.moveToFirst()) return false;
+    	int loop = c.getInt(c.getColumnIndexOrThrow("loop"));
+    	return loop==1;
+    }
 }

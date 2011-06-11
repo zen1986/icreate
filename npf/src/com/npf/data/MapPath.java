@@ -8,21 +8,16 @@ public class MapPath {
 	public double distance;
 	public double time;
 	public boolean bBus;
+	public int firstBus;
+	public int secondBus;
 	
 	
 	public MapPath(boolean b) {
 		bBus =b;
-		distance = 0;
-		time = 0;
+		distance = 0.0;
+		time = 0.0;
+		firstBus = 0;
+		secondBus = 0;
 		path = new ArrayList<MapNode>();
 	}
-	
-	public void addNode(MapNode n) {
-		path.add(n);
-	}
-	
-	public void addDistance(double d) {
-		distance += d;
-	}
-	
 }

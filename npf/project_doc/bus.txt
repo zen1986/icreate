@@ -1,0 +1,38 @@
+
+Define Problem:
+Input: a list of path nodes, with 1st one being source node and last one being destination node
+Output: a instruction on when to take bus or to walk; if take bus, what bus to take, or transit
+
+Assumption:
+1. There is at least a bus exist between any 2 bus stop. So there is no need to walk between any 2 bus stop, and one can take bus from any
+bus stop to any other bus stop.
+2. Within School, at most transit once. 
+
+We consider 5 types of bus: A1, A2, B, C, D
+A1 and A2 are non-loop, while B, C, D are loop. Loop means, if source and destination are both in its loop, it can reach without transit
+to another bus and within the total number of bus stops in loop.
+
+We want find at which node, one should change bus and from what bus to what bus
+
+Algorithm:
+
+Initialise:
+bus_nodes = extract bus nodes from given path nodes, keep sequence
+mid_node = mid node of bus_nodes
+
+Start:
+src_buses = buses that to mid_node from src_node shares
+dst_buses = buses that from mid_node to dst_node shares
+
+if src_buses == null:
+	mid_node = next node towards src_node
+	goto Start
+if dst_buses == null:
+	mid_node = next node towards dst_node
+	goto Start
+//there can't be infinite loop here, because of the assumption 2
+
+Check if there is any common bus of src_buses and dst_buses
+if it exists that's the bus we are looking for
+otherwise one have to transit from any of src_buses to any of dst_buses at mid_node
+

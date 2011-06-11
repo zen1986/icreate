@@ -73,13 +73,13 @@ public class OutputManager {
     public Bitmap getMarkerBm() {
     	return bmMarker;
     }
-    public void markPath() {
+    /*public void markPath() {
     	pf = new Pathfinder(dbcache.getNodeByName(im.getSourceLocation()),dbcache.getNodeByName(im.getDestinationLocation()));
     	markers=pf.getPath();
     	for (MapNode n:markers) {
     		Log.i("NPFdebug", n.name);
     	}
-    }
+    }*/
     
     public ArrayList<MapNode> getMarkers() {
     	return markers;

@@ -1,0 +1,976 @@
+{
+	"BuildingList": [
+	{
+		"Title":"AS1",
+		"Alias":"",
+		"Latitude":"1.295182",
+		"Longitude":"103.771904"
+	},
+	{
+		"Title":"AS2",
+		"Alias":"",
+		"Latitude":"1.295171",
+		"Longitude":"103.771276"
+	},
+	{
+		"Title":"AS3",
+		"Alias":"",
+		"Latitude":"1.294737",
+		"Longitude":"103.771169"
+	},
+	{
+		"Title":"AS4",
+		"Alias":"",
+		"Latitude":"1.294565",
+		"Longitude":"103.771555"
+	},
+	{
+		"Title":"AS5",
+		"Alias":"",
+		"Latitude":"1.29427",
+		"Longitude":"103.771684"
+	},
+	{
+		"Title":"AS6",
+		"Alias":"",
+		"Latitude":"1.295633",
+		"Longitude":"103.773015"
+	},
+	{
+		"Title":"AS7",
+		"Alias":"",
+		"Latitude":"1.294485",
+		"Longitude":"103.770869"
+	},
+	{
+		"Title":"BIZ1",
+		"Alias":"",
+		"Latitude":"1.292447",
+		"Longitude":"103.773991"
+	},
+	{
+		"Title":"BIZ2",
+		"Alias":"",
+		"Latitude":"1.293343",
+		"Longitude":"103.775155"
+	},
+	{
+		"Title":"Blk A, 29 Heng Mui Keng Terrace",
+		"Alias":"",
+		"Latitude":"1.290527",
+		"Longitude":"103.777553"
+	},
+	{
+		"Title":"Block ADM",
+		"Alias":"",
+		"Latitude":"1.296129",
+		"Longitude":"103.772245"
+	},
+	{
+		"Title":"Block B, BTC",
+		"Alias":"",
+		"Latitude":"1.318983",
+		"Longitude":"103.816751"
+	},
+	{
+		"Title":"Brenner Centre for Molecular Medicine",
+		"Alias":"",
+		"Latitude":"1.294833",
+		"Longitude":"103.780412"
+	},
+	{
+		"Title":"Central Library",
+		"Alias":"cl",
+		"Latitude":"1.296394",
+		"Longitude":"103.772832"
+	},
+	{
+		"Title":"Central Library Annexe",
+		"Alias":"cla",
+		"Latitude":"1.297048",
+		"Longitude":"103.773637"
+	},
+	{
+		"Title":"Central Square",
+		"Alias":"yih canteen",
+		"Latitude":"1.296544",
+		"Longitude":"103.78046"
+	},
+	{
+		"Title":"Centre for Life Sciences",
+		"Alias":"cels",
+		"Latitude":"1.294479",
+		"Longitude":"103.780568"
+	},
+	{
+		"Title":"Centre for Maritime Studies",
+		"Alias":"cms",
+		"Latitude":"1.293589",
+		"Longitude":"103.776796"
+	},
+	{
+		"Title":"CELC",
+		"Alias":"",
+		"Latitude":"1.296995",
+		"Longitude":"103.771309"
+	},
+	{
+		"Title":"Cheers Convenience Store",
+		"Alias":"",
+		"Latitude":"1.298534",
+		"Longitude":"103.774914"
+	},
+	{
+		"Title":"Coffee Club Express",
+		"Alias":"",
+		"Latitude":"1.295128",
+		"Longitude":"103.771083"
+	},
+	{
+		"Title":"Coffee Grounds",
+		"Alias":"",
+		"Latitude":"1.295836",
+		"Longitude":"103.781839"
+	},
+	{
+		"Title":"COM1",
+		"Alias":"",
+		"Latitude":"1.294887",
+		"Longitude":"103.77369"
+	},
+	{
+		"Title":"COM2",
+		"Alias":"",
+		"Latitude":"1.294324",
+		"Longitude":"103.773905"
+	},
+	{
+		"Title":"Computer Centre",
+		"Alias":"cc",
+		"Latitude":"1.297606",
+		"Longitude":"103.772408"
+	},
+	{
+		"Title":"Conservatory of Music",
+		"Alias":"music",
+		"Latitude":"1.302401",
+		"Longitude":"103.77265"
+	},
+	{
+		"Title":"Data Storage Institute",
+		"Alias":"",
+		"Latitude":"1.299199",
+		"Longitude":"103.772923"
+	},
+	{
+		"Title":"Dilys Creation (Engineering)",
+		"Alias":"",
+		"Latitude":"1.299269",
+		"Longitude":"103.771421"
+	},
+	{
+		"Title":"Dilys Creation (Science)",
+		"Alias":"",
+		"Latitude":"1.296759",
+		"Longitude":"103.78046"
+	},
+	{
+		"Title":"Duke-NUS Graduate Medical School",
+		"Alias":"",
+		"Latitude":"1.281479",
+		"Longitude":"103.833842"
+	},
+	{
+		"Title":"E1",
+		"Alias":"",
+		"Latitude":"1.29877",
+		"Longitude":"103.770971"
+	},
+	{
+		"Title":"E1A",
+		"Alias":"",
+		"Latitude":"1.299451",
+		"Longitude":"103.770643"
+	},
+	{
+		"Title":"E2",
+		"Alias":"",
+		"Latitude":"1.299338",
+		"Longitude":"103.771035"
+	},
+	{
+		"Title":"E3",
+		"Alias":"",
+		"Latitude":"1.299537",
+		"Longitude":"103.771502"
+	},
+	{
+		"Title":"E3A",
+		"Alias":"",
+		"Latitude":"1.300341",
+		"Longitude":"103.771293"
+	},
+	{
+		"Title":"E4",
+		"Alias":"",
+		"Latitude":"1.29847",
+		"Longitude":"103.772162"
+	},
+	{
+		"Title":"E4A",
+		"Alias":"",
+		"Latitude":"1.298657",
+		"Longitude":"103.772478"
+	},
+	{
+		"Title":"E5",
+		"Alias":"",
+		"Latitude":"1.298019",
+		"Longitude":"103.772339"
+	},
+	{
+		"Title":"EA",
+		"Alias":"",
+		"Latitude":"1.30032",
+		"Longitude":"103.770525"
+	},
+	{
+		"Title":"Eu Tong Sen, BTC",
+		"Alias":"",
+		"Latitude":"1.318361",
+		"Longitude":"103.816713"
+	},
+	{
+		"Title":"Eusoff Hall",
+		"Alias":"eh",
+		"Latitude":"1.293755",
+		"Longitude":"103.770214"
+	},
+	{
+		"Title":"EW1",
+		"Alias":"",
+		"Latitude":"1.29848",
+		"Longitude":"103.770633"
+	},
+	{
+		"Title":"EW2",
+		"Alias":"",
+		"Latitude":"1.299183",
+		"Longitude":"103.772376"
+	},
+	{
+		"Title":"Faculty of Dentistry",
+		"Alias":"",
+		"Latitude":"1.29693",
+		"Longitude":"103.781796"
+	},
+	{
+		"Title":"Federal, BTC",
+		"Alias":"",
+		"Latitude":"1.318415",
+		"Longitude":"103.817351"
+	},
+	{
+		"Title":"Frontier",
+		"Alias":"science canteen",
+		"Latitude":"1.296544",
+		"Longitude":"103.78046"
+	},
+	{
+		"Title":"Great Wall Restaurant",
+		"Alias":"",
+		"Latitude":"1.299708",
+		"Longitude":"103.77537"
+	},
+	{
+		"Title":"House 3",
+		"Alias":"",
+		"Latitude":"1.292731",
+		"Longitude":"103.779425"
+	},
+	{
+		"Title":"House 4",
+		"Alias":"",
+		"Latitude":"1.292946",
+		"Longitude":"103.779194"
+	},
+	{
+		"Title":"House 5, BTC",
+		"Alias":"",
+		"Latitude":"1.317575",
+		"Longitude":"103.816737"
+	},
+	{
+		"Title":"House 11",
+		"Alias":"",
+		"Latitude":"1.297",
+		"Longitude":"103.775187"
+	},
+	{
+		"Title":"House 15",
+		"Alias":"",
+		"Latitude":"1.292897",
+		"Longitude":"103.777977"
+	},
+	{
+		"Title":"House 17",
+		"Alias":"",
+		"Latitude":"1.29257",
+		"Longitude":"103.779114"
+	},
+	{
+		"Title":"House 18",
+		"Alias":"",
+		"Latitude":"1.29235",
+		"Longitude":"103.779409"
+	},
+	{
+		"Title":"I3",
+		"Alias":"",
+		"Latitude":"1.292366",
+		"Longitude":"103.775573"
+	},
+	{
+		"Title":"Institute of Materials Research &amp; Engineering",
+		"Alias":"",
+		"Latitude":"1.294635",
+		"Longitude":"103.775557"
+	},
+	{
+		"Title":"Institute of Systems Science",
+		"Alias":"",
+		"Latitude":"1.292214",
+		"Longitude":"103.776456"
+	},
+	{
+		"Title":"Kent Ridge Guild House",
+		"Alias":"krgh",
+		"Latitude":"1.293694",
+		"Longitude":"103.772508"
+	},
+	{
+		"Title":"Kent Ridge Hall",
+		"Alias":"krh",
+		"Latitude":"1.291921",
+		"Longitude":"103.774393"
+	},
+	{
+		"Title":"Kuok Foundation House",
+		"Alias":"kfh",
+		"Latitude":"1.300368",
+		"Longitude":"103.773497"
+	},
+	{
+		"Title":"Lecture Theatre 1",
+		"Alias":"lt1",
+		"Latitude":"1.299569",
+		"Longitude":"103.771137"
+	},
+	{
+		"Title":"Lecture Theatre 2",
+		"Alias":"lt2",
+		"Latitude":"1.299387",
+		"Longitude":"103.771223"
+	},
+	{
+		"Title":"Lecture Theatre 3",
+		"Alias":"lt3",
+		"Latitude":"1.297654",
+		"Longitude":"103.773165"
+	},
+	{
+		"Title":"Lecture Theatre 4",
+		"Alias":"lt4",
+		"Latitude":"1.297676",
+		"Longitude":"103.773406"
+	},
+	{
+		"Title":"Lecture Theatre 5",
+		"Alias":"lt5",
+		"Latitude":"1.298325",
+		"Longitude":"103.771191"
+	},
+	{
+		"Title":"Lecture Theatre 6",
+		"Alias":"lt6",
+		"Latitude":"1.298807",
+		"Longitude":"103.771808"
+	},
+	{
+		"Title":"Lecture Theatre 7",
+		"Alias":"lt7",
+		"Latitude":"1.300154",
+		"Longitude":"103.770917"
+	},
+	{
+		"Title":"Lecture Theatre 7A",
+		"Alias":"lt7a",
+		"Latitude":"1.300513",
+		"Longitude":"103.770804"
+	},
+	{
+		"Title":"Lecture Theatre 8",
+		"Alias":"lt8",
+		"Latitude":"1.294147",
+		"Longitude":"103.771877"
+	},
+	{
+		"Title":"Lecture Theatre 9",
+		"Alias":"lt9",
+		"Latitude":"1.295021",
+		"Longitude":"103.772097"
+	},
+	{
+		"Title":"Lecture Theatre 10",
+		"Alias":"lt10",
+		"Latitude":"1.29493",
+		"Longitude":"103.771872"
+	},
+	{
+		"Title":"Lecture Theatre 11",
+		"Alias":"lt11",
+		"Latitude":"1.295477",
+		"Longitude":"103.771287"
+	},
+	{
+		"Title":"Lecture Theatre 12",
+		"Alias":"lt12",
+		"Latitude":"1.295021",
+		"Longitude":"103.771019"
+	},
+	{
+		"Title":"Lecture Theatre 13",
+		"Alias":"lt13",
+		"Latitude":"1.295091",
+		"Longitude":"103.770804"
+	},
+	{
+		"Title":"Lecture Theatre 14",
+		"Alias":"lt14",
+		"Latitude":"1.295751",
+		"Longitude":"103.773234"
+	},
+	{
+		"Title":"Lecture Theatre 15",
+		"Alias":"lt15",
+		"Latitude":"1.295568",
+		"Longitude":"103.773288"
+	},
+	{
+		"Title":"Lecture Theatre 16",
+		"Alias":"lt16",
+		"Latitude":"1.293949",
+		"Longitude":"103.773739"
+	},
+	{
+		"Title":"Lecture Theatre 17",
+		"Alias":"lt17",
+		"Latitude":"1.293638",
+		"Longitude":"103.773873"
+	},
+	{
+		"Title":"Lecture Theatre 18",
+		"Alias":"lt18",
+		"Latitude":"1.293568",
+		"Longitude":"103.774382"
+	},
+	{
+		"Title":"Lecture Theatre 19",
+		"Alias":"lt19",
+		"Latitude":"1.293772",
+		"Longitude":"103.774291"
+	},
+	{
+		"Title":"Lecture Theatre 20",
+		"Alias":"lt20",
+		"Latitude":"1.295879",
+		"Longitude":"103.778674"
+	},
+	{
+		"Title":"Lecture Theatre 21",
+		"Alias":"lt21",
+		"Latitude":"1.295407",
+		"Longitude":"103.779345"
+	},
+	{
+		"Title":"Lecture Theatre 22",
+		"Alias":"lt22",
+		"Latitude":"1.295858",
+		"Longitude":"103.779656"
+	},
+	{
+		"Title":"Lecture Theatre 23",
+		"Alias":"lt23",
+		"Latitude":"1.296389",
+		"Longitude":"103.779849"
+	},
+	{
+		"Title":"Lecture Theatre 24",
+		"Alias":"lt24",
+		"Latitude":"1.295831",
+		"Longitude":"103.780466"
+	},
+	{
+		"Title":"Lecture Theatre 25",
+		"Alias":"lt25",
+		"Latitude":"1.296174",
+		"Longitude":"103.780514"
+	},
+	{
+		"Title":"Lecture Theatre 26",
+		"Alias":"lt26",
+		"Latitude":"1.296475",
+		"Longitude":"103.780975"
+	},
+	{
+		"Title":"Lecture Theatre 27",
+		"Alias":"lt27",
+		"Latitude":"1.297048",
+		"Longitude":"103.780745"
+	},
+	{
+		"Title":"Lecture Theatre 28",
+		"Alias":"lt28",
+		"Latitude":"1.297241",
+		"Longitude":"103.781067"
+	},
+	{
+		"Title":"Lecture Theatre 29",
+		"Alias":"lt29",
+		"Latitude":"1.29714",
+		"Longitude":"103.781185"
+	},
+	{
+		"Title":"Lecture Theatre 31",
+		"Alias":"lt31",
+		"Latitude":"1.296893",
+		"Longitude":"103.780267"
+	},
+	{
+		"Title":"Lecture Theatre 32",
+		"Alias":"lt32",
+		"Latitude":"1.296174",
+		"Longitude":"103.778159"
+	},
+	{
+		"Title":"Lecture Theatre 33",
+		"Alias":"lt33",
+		"Latitude":"1.297783",
+		"Longitude":"103.780825"
+	},
+	{
+		"Title":"Lecture Theatre 34",
+		"Alias":"lt34",
+		"Latitude":"1.297778",
+		"Longitude":"103.780648"
+	},
+	{
+		"Title":"Li Ka Shing, BTC",
+		"Alias":"",
+		"Latitude":"1.319637",
+		"Longitude":"103.817362"
+	},
+	{
+		"Title":"Manasseh Meyer, BTC",
+		"Alias":"",
+		"Latitude":"1.319048",
+		"Longitude":"103.81748"
+	},
+	{
+		"Title":"MD1",
+		"Alias":"",
+		"Latitude":"1.295214",
+		"Longitude":"103.780552"
+	},
+	{
+		"Title":"McDonald's",
+		"Alias":"",
+		"Latitude":"1.298046",
+		"Longitude":"103.771078"
+	},
+	{
+		"Title":"MD2",
+		"Alias":"",
+		"Latitude":"1.294981",
+		"Longitude":"103.781107"
+	},
+	{
+		"Title":"MD3",
+		"Alias":"",
+		"Latitude":"1.295359",
+		"Longitude":"103.780981"
+	},
+	{
+		"Title":"MD4",
+		"Alias":"",
+		"Latitude":"1.295772",
+		"Longitude":"103.780825"
+	},
+	{
+		"Title":"MD4A",
+		"Alias":"",
+		"Latitude":"1.295633",
+		"Longitude":"103.780729"
+	},
+	{
+		"Title":"MD5",
+		"Alias":"",
+		"Latitude":"1.295665",
+		"Longitude":"103.781313"
+	},
+	{
+		"Title":"MD7",
+		"Alias":"",
+		"Latitude":"1.296131",
+		"Longitude":"103.780959"
+	},
+	{
+		"Title":"MD9",
+		"Alias":"",
+		"Latitude":"1.296737",
+		"Longitude":"103.781211"
+	},
+	{
+		"Title":"MD10",
+		"Alias":"",
+		"Latitude":"1.29655",
+		"Longitude":"103.781683"
+	},
+	{
+		"Title":"MD11",
+		"Alias":"",
+		"Latitude":"1.296019",
+		"Longitude":"103.781641"
+	},
+	{
+		"Title":"Megabites Cafe",
+		"Alias":"",
+		"Latitude":"1.296635",
+		"Longitude":"103.780219"
+	},
+	{
+		"Title":"Munchie Monkey",
+		"Alias":"",
+		"Latitude":"1.298604",
+		"Longitude":"103.774672"
+	},
+	{
+		"Title":"Museum",
+		"Alias":"",
+		"Latitude":"1.301473",
+		"Longitude":"103.7725"
+	},
+	{
+		"Title":"NUH",
+		"Alias":"",
+		"Latitude":"1.294646",
+		"Longitude":"103.782939"
+	},
+	{
+		"Title":"Oei Tiong Ham, BTC",
+		"Alias":"",
+		"Latitude":"1.319391",
+		"Longitude":"103.817888"
+	},
+	{
+		"Title":"Office of Estate &amp; Development",
+		"Alias":"",
+		"Latitude":"1.301628",
+		"Longitude":"103.773594"
+	},
+	{
+		"Title":"Post Office",
+		"Alias":"",
+		"Latitude":"1.298459",
+		"Longitude":"103.775048"
+	},
+	{
+		"Title":"Prince George&apos;s Park Residences",
+		"Alias":"pgpr",
+		"Latitude":"1.290999",
+		"Longitude":"103.781024"
+	},
+	{
+		"Title":"Raffles Hall",
+		"Alias":"rh",
+		"Latitude":"1.299778",
+		"Longitude":"103.773841"
+	},
+	{
+		"Title":"Ridge View Residences",
+		"Alias":"rvr",
+		"Latitude":"1.298689",
+		"Longitude":"103.77604"
+	},
+	{
+		"Title":"Ridge View Tower Block",
+		"Alias":"rvtb",
+		"Latitude":"1.297992",
+		"Longitude":"103.776641"
+	},
+	{
+		"Title":"S1",
+		"Alias":"",
+		"Latitude":"1.295831",
+		"Longitude":"103.777751"
+	},
+	{
+		"Title":"S2",
+		"Alias":"",
+		"Latitude":"1.295557",
+		"Longitude":"103.777982"
+	},
+	{
+		"Title":"S2S",
+		"Alias":"",
+		"Latitude":"1.297662",
+		"Longitude":"103.773943"
+	},
+	{
+		"Title":"S3",
+		"Alias":"",
+		"Latitude":"1.2956",
+		"Longitude":"103.778486"
+	},
+	{
+		"Title":"S4",
+		"Alias":"",
+		"Latitude":"1.295675",
+		"Longitude":"103.778991"
+	},
+	{
+		"Title":"S4A",
+		"Alias":"",
+		"Latitude":"1.295863",
+		"Longitude":"103.779082"
+	},
+	{
+		"Title":"S5",
+		"Alias":"",
+		"Latitude":"1.295531",
+		"Longitude":"103.779607"
+	},
+	{
+		"Title":"S6",
+		"Alias":"",
+		"Latitude":"1.295027",
+		"Longitude":"103.780192"
+	},
+	{
+		"Title":"S7",
+		"Alias":"",
+		"Latitude":"1.296362",
+		"Longitude":"103.778792"
+	},
+	{
+		"Title":"S8",
+		"Alias":"",
+		"Latitude":"1.296126",
+		"Longitude":"103.779253"
+	},
+	{
+		"Title":"S9",
+		"Alias":"",
+		"Latitude":"1.296062",
+		"Longitude":"103.779849"
+	},
+	{
+		"Title":"S9A",
+		"Alias":"",
+		"Latitude":"1.295911",
+		"Longitude":"103.77987"
+	},
+	{
+		"Title":"S10",
+		"Alias":"",
+		"Latitude":"1.296351",
+		"Longitude":"103.779586"
+	},
+	{
+		"Title":"S11",
+		"Alias":"",
+		"Latitude":"1.296684",
+		"Longitude":"103.778653"
+	},
+	{
+		"Title":"S12",
+		"Alias":"",
+		"Latitude":"1.297027",
+		"Longitude":"103.778535"
+	},
+	{
+		"Title":"S13",
+		"Alias":"",
+		"Latitude":"1.296818",
+		"Longitude":"103.779087"
+	},
+	{
+		"Title":"S14",
+		"Alias":"",
+		"Latitude":"1.296877",
+		"Longitude":"103.779597"
+	},
+	{
+		"Title":"S15",
+		"Alias":"",
+		"Latitude":"1.297188",
+		"Longitude":"103.780155"
+	},
+	{
+		"Title":"S16",
+		"Alias":"",
+		"Latitude":"1.296807",
+		"Longitude":"103.780085"
+	},
+	{
+		"Title":"S17",
+		"Alias":"",
+		"Latitude":"1.297746",
+		"Longitude":"103.780385"
+	},
+	{
+		"Title":"SDE1",
+		"Alias":"",
+		"Latitude":"1.297467",
+		"Longitude":"103.770568"
+	},
+	{
+		"Title":"SDE2",
+		"Alias":"",
+		"Latitude":"1.297338",
+		"Longitude":"103.771003"
+	},
+	{
+		"Title":"SDE3",
+		"Alias":"",
+		"Latitude":"1.298196",
+		"Longitude":"103.770332"
+	},
+	{
+		"Title":"Shaw Foundation Alumni House",
+		"Alias":"",
+		"Latitude":"1.293246",
+		"Longitude":"103.773465"
+	},
+	{
+		"Title":"Sheares Hall",
+		"Alias":"sh",
+		"Latitude":"1.291471",
+		"Longitude":"103.775616"
+	},
+	{
+		"Title":"Singapore Synchrotron Light Source",
+		"Alias":"ssls",
+		"Latitude":"1.295651",
+		"Longitude":"103.774935"
+	},
+	{
+		"Title":"Sports and Recreation Centre",
+		"Alias":"",
+		"Latitude":"1.299762",
+		"Longitude":"103.775337"
+	},
+	{
+		"Title":"Staff Club",
+		"Alias":"",
+		"Latitude":"1.299271",
+		"Longitude":"103.775681"
+	},
+	{
+		"Title":"Subway",
+		"Alias":"",
+		"Latitude":"1.298706",
+		"Longitude":"103.774796"
+	},
+	{
+		"Title":"Sun Asian Bistro",
+		"Alias":"",
+		"Latitude":"1.299108",
+		"Longitude":"103.77567"
+	},
+	{
+		"Title":"T-Lab",
+		"Alias":"",
+		"Latitude":"1.299682",
+		"Longitude":"103.772033"
+	},
+	{
+		"Title":"Techno Edge",
+		"Alias":"engineering canteen",
+		"Latitude":"1.297939",
+		"Longitude":"103.771437"
+	},
+	{
+		"Title":"Temasek Hall",
+		"Alias":"th",
+		"Latitude":"1.292873",
+		"Longitude":"103.771236"
+	},
+	{
+		"Title":"The Deck",
+		"Alias":"arts canteen",
+		"Latitude":"1.294715",
+		"Longitude":"103.772419"
+	},
+	{
+		"Title":"The Grinning Gecko",
+		"Alias":"",
+		"Latitude":"1.296464",
+		"Longitude":"103.773149"
+	},
+	{
+		"Title":"The Olive Cove",
+		"Alias":"",
+		"Latitude":"1.29973",
+		"Longitude":"103.770847"
+	},
+	{
+		"Title":"The Pavilion Cafe",
+		"Alias":"",
+		"Latitude":"1.300277",
+		"Longitude":"103.770643"
+	},
+	{
+		"Title":"The Terrace",
+		"Alias":"business canteen",
+		"Latitude":"1.29426",
+		"Longitude":"103.774281"
+	},
+	{
+		"Title":"Tower Block, BTC",
+		"Alias":"",
+		"Latitude":"1.319485",
+		"Longitude":"103.817075"
+	},
+	{
+		"Title":"University Cultural Centre",
+		"Alias":"ucc",
+		"Latitude":"1.301671",
+		"Longitude":"103.771775"
+	},
+	{
+		"Title":"University Hall",
+		"Alias":"uh",
+		"Latitude":"1.297236",
+		"Longitude":"103.777692"
+	},
+	{
+		"Title":"University Health Centre",
+		"Alias":"uhc",
+		"Latitude":"1.299113",
+		"Longitude":"103.776303"
+	},
+	{
+		"Title":"Visitors&apos; Lodge",
+		"Alias":"vl",
+		"Latitude":"1.298582",
+		"Longitude":"103.773256"
+	},
+	{
+		"Title":"Yusof Ishak House",
+		"Alias":"yih",
+		"Latitude":"1.298657",
+		"Longitude":"103.774683"
+	}
+	]
+}

@@ -14,11 +14,14 @@ public class MapNode implements Comparable<MapNode> {
 	public final int[] neighbors;  //store _id   building's neighbours are the building adjacent to it
 									   //            bus stop's neighbours are those adjacent and at low stream
 	public final int _id;
+	public final int[] buses;
 	public final boolean isBusStop;
 	public final String[] locations;     //the locations this map node contains
 
 	private final int EARTH_RADIUS = 6371000;
 	
+	
+	//for building node
 	public MapNode(Cursor c, int[] _neighbors, String[] _locations) {
 		_id = c.getInt(c.getColumnIndexOrThrow("_id"));
 		name = c.getString(c.getColumnIndexOrThrow("name"));
@@ -28,8 +31,21 @@ public class MapNode implements Comparable<MapNode> {
 		texv = c.getDouble(c.getColumnIndexOrThrow("texv"));
 		neighbors = _neighbors;
 		locations = _locations;
-		if (c.getInt(c.getColumnIndexOrThrow("isbusstop"))==1) isBusStop = true;
-		else isBusStop = false;
+		buses = null;
+		isBusStop = false;
+	}
+	//for bus stop node
+	public MapNode(Cursor c, int[] _neighbors, int[] _buses) {
+		_id = c.getInt(c.getColumnIndexOrThrow("_id"));
+		name = c.getString(c.getColumnIndexOrThrow("name"));
+		latitude = c.getDouble(c.getColumnIndexOrThrow("latitude"));
+		longitude = c.getDouble(c.getColumnIndexOrThrow("longitude"));
+		texu = c.getDouble(c.getColumnIndexOrThrow("texu"));
+		texv = c.getDouble(c.getColumnIndexOrThrow("texv"));
+		neighbors = _neighbors;
+		isBusStop = true;
+		locations = null;
+		buses = _buses;
 	}
 	
 	public void resetPathVar() {

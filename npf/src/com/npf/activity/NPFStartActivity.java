@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import com.npf.data.DataCache;
 import com.npf.data.MapNode;
+import com.npf.data.MapPath;
 import com.npf.logic.ComUtil;
 import com.npf.logic.GPSLocator;
 import com.npf.logic.InputManager;
@@ -126,14 +127,14 @@ public class NPFStartActivity extends Activity {
 					im.setSourceLocation(s_node.name);
 					
 			    	pf = new Pathfinder(s_node,d_node);
-			    	ArrayList<MapNode> pathNodes =pf.getPath();
+			    	MapPath walkPath =pf.getWalkPath();
 			    	ArrayList<String> nodes = new ArrayList<String>();
-			    	String[] str_nodes = new String[pathNodes.size()+1];
+			    	String[] str_nodes = new String[walkPath.path.size()+1];
 			    	nodes.add("Follow the path below:");
 			    	
 			    	//need to add path node from behind to front
-			    	for (int i=pathNodes.size()-1; i>=0;i--) {
-			    		MapNode n = pathNodes.get(i);
+			    	for (int i=walkPath.path.size()-1; i>=0;i--) {
+			    		MapNode n = walkPath.path.get(i);
 			    		nodes.add(n.name);
 			    	}
 			    	

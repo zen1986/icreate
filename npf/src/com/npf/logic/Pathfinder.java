@@ -68,7 +68,7 @@ public class Pathfinder {
 	}
 	
 	private void reconstructPath(MapNode n) {
-		walkPath.addNode(n);
+		walkPath.path.add(n);
 		MapNode from = camefrom[dbcache.getNodeIdx(n._id)];
 		if (from==null) { //reach the start node
 			return;
@@ -132,14 +132,26 @@ public class Pathfinder {
 ///////// in any case, at most 1 transfer is needed to reach any 2 bus stop
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	private MapNode findNearestBusstop(MapNode n) {
-		
-	}
+	private void findBusPath(MapNode src, MapNode dest) {
+		MapNode nearestSrcBusstop = dbcache.getNearestBusstop(src.latitude,src.longitude,null);
+		MapNode nearestDstBusStop = dbcache.getNearestBusstop(dest.latitude,dest.longitude,null);
 
-	private boolean findBusPath(MapNode src, MapNode dest) {
-		MapNode nearestSrcBusstop = findNearestBusstop(src);
-		MapNode nearestDstBusStop = findNearestBusstop(dest);
-		return false;
+		busPath.path.add(src);
+		
+		int commBus = dbcache.reachable(nearestSrcBusstop, nearestDstBusStop);
+		if (commBus==0) {
+			//already at dst bus stop
+		}
+		else if (commBus>0) {
+			//take commBus from src to dest
+			busPath.firstBus = commBus;
+		}
+		else {
+			//no commBus
+			//have to look for intermediate bus
+			dbcache.findTransferBusstop(src, dest, busPath);
+		}
+		busPath.path.add(dest);
 	}
 
 }
