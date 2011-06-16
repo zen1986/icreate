@@ -3,6 +3,8 @@ package com.npf.logic;
 import java.util.ArrayList;
 import java.util.PriorityQueue;
 
+import android.util.Log;
+
 import com.npf.data.DataCache;
 import com.npf.data.MapNode;
 import com.npf.data.MapPath;
@@ -96,6 +98,7 @@ public class Pathfinder {
 			closedset.add(x);
 			for(int yid:x.neighbors) {
 				MapNode y = dbcache.getNodeById(yid);
+				Log.i("NPFdebug", x._id+" neighbor is "+y);
 				if (closedset.contains(y)) continue;
 				double tentative_g_score = x.g + getDist(x,y);
 				boolean tentative_better;
